@@ -1,5 +1,5 @@
 "use client";
-import { useEffect, useMemo, useState } from "react";
+import { Suspense, useEffect, useMemo, useState } from "react";
 import Link from "next/link";
 import { useSearchParams } from "next/navigation";
 import { LineChart, Line, XAxis, YAxis, ResponsiveContainer, Tooltip, CartesianGrid, Legend } from "recharts";
@@ -23,7 +23,15 @@ function instOfPeer(p: any, forHoldingId: string, sleeve: Inst["sleeve"]): Inst 
 function fmtPct(n: number) { return `${(n*100).toFixed(2)}%`; }
 function fmtDate(t:number){const d=new Date(t);return `${d.getUTCFullYear()}-${String(d.getUTCMonth()+1).padStart(2,"0")}`}
 
-export default function Sandbox() {
+export default function SandboxPage() {
+  return (
+    <Suspense fallback={<div className="p-6 text-sm text-zinc-500">Loading sandbox…</div>}>
+      <Sandbox />
+    </Suspense>
+  );
+}
+
+function Sandbox() {
   const search = useSearchParams();
   const swapParam = search.get("swap"); // "<holdingId>:<peerId>"
 
