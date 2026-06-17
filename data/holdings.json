@@ -51,6 +51,25 @@
         { "ticker": "TSLA",  "name": "Tesla",        "weight": 0.014 },
         { "ticker": "BRK.B", "name": "Berkshire B",  "weight": 0.013 },
         { "ticker": "JPM",   "name": "JPMorgan",     "weight": 0.012 }
+      ],
+      "countryWeightsAsOf": "2026-06 (approx, FTSE All-World)",
+      "countryWeights": [
+        { "code": "US", "name": "United States", "weight": 0.620 },
+        { "code": "JP", "name": "Japan",         "weight": 0.055 },
+        { "code": "GB", "name": "United Kingdom","weight": 0.040 },
+        { "code": "CN", "name": "China",         "weight": 0.030 },
+        { "code": "CA", "name": "Canada",        "weight": 0.030 },
+        { "code": "FR", "name": "France",        "weight": 0.030 },
+        { "code": "CH", "name": "Switzerland",   "weight": 0.025 },
+        { "code": "DE", "name": "Germany",       "weight": 0.020 },
+        { "code": "IN", "name": "India",         "weight": 0.020 },
+        { "code": "TW", "name": "Taiwan",        "weight": 0.020 },
+        { "code": "AU", "name": "Australia",     "weight": 0.018 },
+        { "code": "KR", "name": "South Korea",   "weight": 0.015 },
+        { "code": "NL", "name": "Netherlands",   "weight": 0.012 },
+        { "code": "IT", "name": "Italy",         "weight": 0.008 },
+        { "code": "ES", "name": "Spain",         "weight": 0.007 },
+        { "code": "BR", "name": "Brazil",        "weight": 0.005 }
       ]
     },
     {
@@ -91,6 +110,19 @@
         { "ticker": "TSLA",  "name": "Tesla",       "weight": 0.015 },
         { "ticker": "BRK.B", "name": "Berkshire B", "weight": 0.014 },
         { "ticker": "JPM",   "name": "JPMorgan",    "weight": 0.013 }
+      ],
+      "countryWeightsAsOf": "2026-06 (approx, MSCI World)",
+      "countryWeights": [
+        { "code": "US", "name": "United States",   "weight": 0.700 },
+        { "code": "JP", "name": "Japan",           "weight": 0.060 },
+        { "code": "GB", "name": "United Kingdom",  "weight": 0.040 },
+        { "code": "CA", "name": "Canada",          "weight": 0.035 },
+        { "code": "FR", "name": "France",          "weight": 0.033 },
+        { "code": "CH", "name": "Switzerland",     "weight": 0.030 },
+        { "code": "DE", "name": "Germany",         "weight": 0.025 },
+        { "code": "AU", "name": "Australia",       "weight": 0.020 },
+        { "code": "NL", "name": "Netherlands",     "weight": 0.015 },
+        { "code": "SE", "name": "Sweden",          "weight": 0.010 }
       ]
     },
     {
@@ -132,6 +164,17 @@
         { "ticker": "ANET", "name": "Arista Networks",         "weight": 0.032 },
         { "ticker": "LRCX", "name": "Lam Research",            "weight": 0.030 },
         { "ticker": "MU",   "name": "Micron Technology",       "weight": 0.028 }
+      ],
+      "countryWeightsAsOf": "2026-06 (estimated, BGF Next Gen Tech monthly report)",
+      "countryWeights": [
+        { "code": "US", "name": "United States",   "weight": 0.700 },
+        { "code": "TW", "name": "Taiwan",          "weight": 0.070 },
+        { "code": "NL", "name": "Netherlands",     "weight": 0.050 },
+        { "code": "KR", "name": "South Korea",     "weight": 0.030 },
+        { "code": "JP", "name": "Japan",           "weight": 0.030 },
+        { "code": "IL", "name": "Israel",          "weight": 0.020 },
+        { "code": "CN", "name": "China",           "weight": 0.020 },
+        { "code": "GB", "name": "United Kingdom",  "weight": 0.015 }
       ]
     },
     {
@@ -172,6 +215,15 @@
         { "ticker": "ASML", "name": "ASML",       "weight": 0.025 },
         { "ticker": "ADBE", "name": "Adobe",      "weight": 0.020 },
         { "ticker": "IBM",  "name": "IBM",        "weight": 0.018 }
+      ],
+      "countryWeightsAsOf": "2026-06 (approx, MSCI World IT)",
+      "countryWeights": [
+        { "code": "US", "name": "United States",   "weight": 0.850 },
+        { "code": "JP", "name": "Japan",           "weight": 0.030 },
+        { "code": "NL", "name": "Netherlands",     "weight": 0.030 },
+        { "code": "DE", "name": "Germany",         "weight": 0.020 },
+        { "code": "GB", "name": "United Kingdom",  "weight": 0.015 },
+        { "code": "FR", "name": "France",          "weight": 0.010 }
       ]
     },
     {
@@ -212,6 +264,20 @@
         { "ticker": "2454.TW",   "name": "MediaTek",                   "weight": 0.018 },
         { "ticker": "601939.SS", "name": "China Construction Bank",    "weight": 0.015 },
         { "ticker": "NPN.JO",    "name": "Naspers",                    "weight": 0.013 }
+      ],
+      "countryWeightsAsOf": "2026-06 (estimated, JPM EM sleeve)",
+      "countryWeights": [
+        { "code": "CN", "name": "China",          "weight": 0.280 },
+        { "code": "IN", "name": "India",          "weight": 0.220 },
+        { "code": "TW", "name": "Taiwan",         "weight": 0.170 },
+        { "code": "KR", "name": "South Korea",    "weight": 0.120 },
+        { "code": "BR", "name": "Brazil",         "weight": 0.050 },
+        { "code": "SA", "name": "Saudi Arabia",   "weight": 0.040 },
+        { "code": "ZA", "name": "South Africa",   "weight": 0.030 },
+        { "code": "MX", "name": "Mexico",         "weight": 0.025 },
+        { "code": "ID", "name": "Indonesia",      "weight": 0.020 },
+        { "code": "AE", "name": "UAE",            "weight": 0.015 },
+        { "code": "PL", "name": "Poland",         "weight": 0.010 }
       ]
     }
   ],
