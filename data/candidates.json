@@ -49,7 +49,6 @@
     {
       "label": "EM — A3DRHJ alternatives",
       "items": [
-        { "id": "JREM",  "yahoo": "JREM.DE", "name": "JPMorgan EM Research Enhanced Index",                "sleeve": "em",   "ter": 0.0035, "isin": "IE00BF4G6Y48", "wkn": "A2QFFR", "note": "Quant-enhanced JPM EM ETF — cheap alternative to A3DRHJ" },
         { "id": "EIMI",  "yahoo": "EIMI.L",  "name": "iShares Core MSCI EM IMI",                            "sleeve": "em",   "ter": 0.0018, "isin": "IE00BKM4GZ66", "wkn": "A111X9", "note": "Broadest EM ~3,000 stocks incl. small caps — the benchmark" },
         { "id": "FEM",   "yahoo": "0P0000WLR8.F", "name": "Fidelity Emerging Markets Y EUR",                "sleeve": "em",   "ter": 0.0093, "isin": "LU1116429852", "wkn": "A14M9C", "note": "Active Fidelity EM — established franchise, cheaper than A3DRHJ" },
         { "id": "HMEF",  "yahoo": "HMEF.DE", "name": "HSBC MSCI Emerging Markets",                          "sleeve": "em",   "ter": 0.0015, "isin": "IE00B5SSQT16", "wkn": "A1C9B1", "note": "Cheapest broad EM ETF on market" }

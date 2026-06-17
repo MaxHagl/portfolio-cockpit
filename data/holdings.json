@@ -133,9 +133,9 @@
       "type": "Active Fund",
       "eur": 2560,
       "weight": 0.120,
-      "thesis": "Active EM mandate wrapped by HVB/Structured Invest, run on a JPMorgan emerging-markets sleeve. Bet on manager + EM convergence vs passing through EIMI/JREM.",
+      "thesis": "Active EM mandate wrapped by HVB/Structured Invest, run on a JPMorgan emerging-markets sleeve. Bet on manager + EM convergence vs passing through EIMI.",
       "risk": [
-        "~2.0% TER is heavy — manager needs ~1.7%/yr alpha vs MSCI EM net to beat JREM (0.35%)",
+        "~2.0% TER is heavy — manager needs ~1.8%/yr alpha vs MSCI EM net to beat EIMI (0.18%)",
         "Onemarkets wrapper adds counterparty / structure layer (Structured Invest GmbH)",
         "EM volatility + FX + political risk: 35-45% drawdowns plausible"
       ],

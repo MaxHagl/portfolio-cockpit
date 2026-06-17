@@ -241,22 +241,6 @@
   ],
   "A3DRHJ": [
     {
-      "id": "JREM",
-      "name": "JPMorgan EM Research Enhanced Index Equity UCITS ETF (acc)",
-      "wkn": "A2QFFR", "isin": "IE00BF4G6Y48", "yahoo": "JREM.DE",
-      "ter": 0.0035, "type": "ETF",
-      "thesis": "Quant-enhanced JPM EM ETF — light active tilts on top of MSCI EM. The cheap alternative to A3DRHJ.",
-      "vsCurrent": { "feeDelta": -0.0165, "overlap": 0.85 },
-      "whyPick": [
-        "1.65%/yr fee saving — over 15 yrs compounds to ~30% of position value",
-        "Same JPM EM team intellectual framework, ETF wrapper"
-      ],
-      "whyNot": [
-        "Light alpha mandate — won't deviate as much from index as A3DRHJ can",
-        "You rejected this in June review citing 'better performance' for A3DRHJ — confirm thesis still holds"
-      ]
-    },
-    {
       "id": "EIMI",
       "name": "iShares Core MSCI EM IMI UCITS ETF",
       "wkn": "A111X9", "isin": "IE00BKM4GZ66", "yahoo": "EIMI.L",
@@ -285,7 +269,7 @@
         "Long established Fidelity EM franchise (Nick Price era + successors)"
       ],
       "whyNot": [
-        "Still much more expensive than EIMI/JREM",
+        "Still much more expensive than EIMI",
         "Manager-style risk — concentrated in quality/growth EM, lags in value-EM rallies"
       ]
     },
