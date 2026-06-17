@@ -17,45 +17,110 @@ def simulate_portfolio_wealth(
     starting_eur: float,
     ter_annual: np.ndarray,
     rebalance: str = "quarterly",
-) -> np.ndarray:
+    cashflows: np.ndarray | None = None,
+    cashflow_inflation_adj: np.ndarray | None = None,
+    track_basis: bool = False,
+):
     """Simulate portfolio wealth given (n_paths, horizon_days, n_assets) returns.
 
     Returns (n_paths, horizon_days + 1) wealth trajectories starting at starting_eur.
+    If track_basis=True, returns (wealth, basis) tuple where basis is (n_paths, T+1)
+    cumulative cost basis per path. Used for capital-gains tax computation.
 
     Rebalance options: 'daily', 'weekly' (5d), 'monthly' (21d), 'quarterly' (63d),
                        'annual' (252d), 'never'
+
+    Cashflows:
+        cashflows: optional (T+1,) array of EUR amounts per day.
+                   Positive = contribution at start of day t (before return applied)
+                   Negative = withdrawal at start of day t
+        cashflow_inflation_adj: optional (T+1,) or (P, T+1) deflator applied to cashflows
+                   (e.g., for inflation-indexed withdrawals: cashflow_t * deflator_t)
+        Contributions are allocated to assets per target weights.
+        Withdrawals reduce wealth proportionally across assets (basis tracks
+        average-cost reduction).
     """
     P, T, A = daily_paths.shape
-    daily_ter = (ter_annual / TRADING_DAYS_PER_YEAR).astype(np.float32)  # (A,)
-
-    # Subtract daily TER drag from returns. Use view-based math to avoid full copy.
+    daily_ter = (ter_annual / TRADING_DAYS_PER_YEAR).astype(np.float32)
     net_paths = daily_paths - daily_ter[np.newaxis, np.newaxis, :]
 
-    if rebalance == "never":
-        # Compound each asset independently, sum wealth without storing (P, T, A) tensor.
+    has_cashflow = cashflows is not None and np.any(cashflows != 0)
+    if has_cashflow:
+        # Expand cashflows to (P, T+1) shape
+        if cashflow_inflation_adj is not None:
+            if cashflow_inflation_adj.ndim == 1:
+                cf = cashflows[np.newaxis, :] * cashflow_inflation_adj[np.newaxis, :]
+                cf = np.broadcast_to(cf, (P, T + 1)).copy()
+            else:
+                cf = cashflows[np.newaxis, :] * cashflow_inflation_adj
+        else:
+            cf = np.broadcast_to(cashflows[np.newaxis, :], (P, T + 1)).copy()
+    else:
+        cf = None
+
+    # Fast path: no cashflows, never-rebalance — original optimized loop
+    if not has_cashflow and rebalance == "never":
         wealth = np.zeros((P, T + 1), dtype=np.float64)
         wealth[:, 0] = starting_eur
         for a in range(A):
             if weights[a] == 0:
                 continue
-            cp = np.cumprod(1 + net_paths[:, :, a], axis=1)  # (P, T)
+            cp = np.cumprod(1 + net_paths[:, :, a], axis=1)
             wealth[:, 1:] += starting_eur * weights[a] * cp
+        if track_basis:
+            basis = np.full((P, T + 1), starting_eur, dtype=np.float64)
+            return wealth, basis
         return wealth
 
     rebal_freq = {
         "daily": 1, "weekly": 5, "monthly": 21,
-        "quarterly": 63, "annual": 252,
+        "quarterly": 63, "annual": 252, "never": None,
     }[rebalance]
 
     wealth = np.empty((P, T + 1), dtype=np.float64)
     wealth[:, 0] = starting_eur
-    asset_w = np.full((P, A), starting_eur, dtype=np.float64) * weights[np.newaxis, :]
+    asset_w = (np.full(P, starting_eur, dtype=np.float64)[:, np.newaxis] * weights[np.newaxis, :])
+
+    if track_basis:
+        basis = np.empty((P, T + 1), dtype=np.float64)
+        basis[:, 0] = starting_eur
 
     for t in range(T):
+        # 1. Cashflow at start of day t+1 (before return applied to it)
+        if has_cashflow:
+            cf_t = cf[:, t + 1]
+            # Positive: contribution allocated per target weights
+            # Negative: withdrawal proportional to current asset weights
+            pos = cf_t > 0
+            neg = cf_t < 0
+            if np.any(pos):
+                asset_w[pos] += cf_t[pos, np.newaxis] * weights[np.newaxis, :]
+                if track_basis:
+                    basis[pos, t] = basis[pos, t] + cf_t[pos]
+            if np.any(neg):
+                current_total = asset_w[neg].sum(axis=1, keepdims=True)
+                # Withdraw proportionally across assets
+                withdraw_frac = (-cf_t[neg, np.newaxis]) / np.maximum(current_total, 1e-9)
+                withdraw_frac = np.minimum(withdraw_frac, 1.0)
+                asset_w[neg] = asset_w[neg] * (1 - withdraw_frac)
+                if track_basis:
+                    # Reduce basis proportionally (average-cost)
+                    basis[neg, t] = basis[neg, t] * (1 - withdraw_frac[:, 0])
+
+        # 2. Apply daily return
         asset_w = asset_w * (1 + net_paths[:, t, :])
+
+        # 3. Record wealth
         wealth[:, t + 1] = asset_w.sum(axis=1)
-        if (t + 1) % rebal_freq == 0 and t < T - 1:
+        if track_basis:
+            basis[:, t + 1] = basis[:, t]
+
+        # 4. Rebalance if scheduled
+        if rebal_freq is not None and (t + 1) % rebal_freq == 0 and t < T - 1:
             asset_w = wealth[:, t + 1, np.newaxis] * weights[np.newaxis, :]
+
+    if track_basis:
+        return wealth, basis
     return wealth
 
 
