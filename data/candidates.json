@@ -1,0 +1,59 @@
+{
+  "groups": [
+    {
+      "label": "Core — VWCE alternatives",
+      "items": [
+        { "id": "VWRL",  "yahoo": "VWRL.L",  "name": "Vanguard FTSE All-World (dist)",                 "sleeve": "core", "ter": 0.0022, "isin": "IE00B3RBWM25", "wkn": "A1JX52", "note": "Same fund as VWCE but distributing — quarterly dividend instead of accumulating" },
+        { "id": "SPYI",  "yahoo": "SPYI.DE", "name": "SPDR MSCI ACWI IMI",                              "sleeve": "core", "ter": 0.0017, "isin": "IE00B3YLTY66", "wkn": "A1JJTD", "note": "Broader than VWCE — ACWI IMI includes small caps (~9,000 stocks)" },
+        { "id": "ISAC",  "yahoo": "ISAC.L",  "name": "iShares MSCI ACWI (acc)",                          "sleeve": "core", "ter": 0.0020, "isin": "IE00B6R52259", "wkn": "A1JMDF", "note": "iShares' answer to VWCE — MSCI ACWI ~2,800 large/mid stocks" },
+        { "id": "FWRA",  "yahoo": "FWIA.DE", "name": "Invesco FTSE All-World (acc)",                     "sleeve": "core", "ter": 0.0015, "isin": "IE000716YHJ7", "wkn": "A3D8ZM", "note": "Cheapest in category — same FTSE All-World index" }
+      ]
+    },
+    {
+      "label": "Core — SWDA alternatives / factor tilts",
+      "items": [
+        { "id": "IWDA",  "yahoo": "IWDA.AS", "name": "iShares Core MSCI World (Amsterdam)",              "sleeve": "core", "ter": 0.0020, "isin": "IE00B4L5Y983", "wkn": "A0RPWH", "note": "Same fund as SWDA, Amsterdam listing" },
+        { "id": "EUNL",  "yahoo": "EUNL.DE", "name": "iShares Core MSCI World (Xetra)",                  "sleeve": "core", "ter": 0.0020, "isin": "IE00B4L5Y983", "wkn": "A0RPWH", "note": "Same fund as SWDA, Xetra listing — tightest EUR spreads" },
+        { "id": "XDWD",  "yahoo": "XDWD.DE", "name": "Xtrackers MSCI World 1C",                          "sleeve": "core", "ter": 0.0019, "isin": "IE00BJ0KDQ92", "wkn": "A1XEY2", "note": "Xtrackers MSCI World — 1bp cheaper, provider diversification" },
+        { "id": "ZPRV",  "yahoo": "ZPRV.DE", "name": "SPDR MSCI USA Small Cap Value Weighted",           "sleeve": "core", "ter": 0.0030, "isin": "IE00BSPLC413", "wkn": "A12HU7", "note": "US small-cap value factor — genuine diversification vs MSCI World" }
+      ]
+    },
+    {
+      "label": "Core — Dividend / quality-income (researched 2026-06-16)",
+      "items": [
+        { "id": "FUSD",  "yahoo": "FUSD.L",  "name": "Fidelity US Quality Income",                       "sleeve": "core", "ter": 0.0025, "isin": "IE00BYXVGZ48", "wkn": "A2DL7E", "note": "Quality screen, mega-cap US — preferred dividend fit" },
+        { "id": "WQDV",  "yahoo": "WQDV.L",  "name": "iShares MSCI World Quality Dividend",              "sleeve": "core", "ter": 0.0038, "isin": "IE00BYYHSQ67", "wkn": "A2DRG5", "note": "Global version of FUSD, broader" },
+        { "id": "ZPRG",  "yahoo": "ZPRG.DE", "name": "SPDR S&P Global Dividend Aristocrats",             "sleeve": "core", "ter": 0.0045, "isin": "IE00B9CQXS71", "wkn": "A1T8GD", "note": "Dividend-growth screen" },
+        { "id": "VHYL",  "yahoo": "VHYL.DE", "name": "Vanguard FTSE All-World High Dividend Yield",      "sleeve": "core", "ter": 0.0029, "isin": "IE00B8GKDB10", "wkn": "A1T8FV", "note": "Pure high-yield — financials/energy heavy" },
+        { "id": "TDIV",  "yahoo": "TDIV.AS", "name": "VanEck Morningstar Dev Mkt Dividend Leaders",      "sleeve": "core", "ter": 0.0038, "isin": "NL0011683594", "wkn": "A2JAHJ", "note": "Concentrated 100 names" },
+        { "id": "ISPA",  "yahoo": "ISPA.DE", "name": "iShares STOXX Global Select Dividend 100",         "sleeve": "core", "ter": 0.0046, "isin": "DE000A0F5UH1", "wkn": "A0F5UH", "note": "Yield-only, value-trap-prone" }
+      ]
+    },
+    {
+      "label": "Tech — BGF alternatives",
+      "items": [
+        { "id": "PolarCapGlobalTech", "yahoo": "0P00009NZ7.F", "name": "Polar Capital Global Technology",  "sleeve": "tech", "ter": 0.0125, "isin": "IE00B42W4J83", "wkn": "A0J28T", "note": "Broader active global tech, longer track record (2001)" },
+        { "id": "AllianzGlobalAI",    "yahoo": "0P0001545I.F", "name": "Allianz Global Artificial Intelligence", "sleeve": "tech", "ter": 0.0205, "isin": "LU1548497426", "wkn": "A2DKAY", "note": "Pure AI theme — semis, infra, applications" },
+        { "id": "PictetRobotics",     "yahoo": "0P0000VEAN.F", "name": "Pictet Robotics R EUR",              "sleeve": "tech", "ter": 0.0220, "isin": "LU1279334210", "wkn": "A2APUW", "note": "Automation/robotics — diversification vs BGF consumer tech" }
+      ]
+    },
+    {
+      "label": "Tech — XDWT alternatives",
+      "items": [
+        { "id": "IUIT",  "yahoo": "IUIT.L",  "name": "iShares S&P 500 Information Technology",            "sleeve": "tech", "ter": 0.0015, "isin": "IE00B3WJKG14", "wkn": "A142N1", "note": "US-only tech, cheapest — higher AI-cycle beta" },
+        { "id": "EQQQ",  "yahoo": "EQQQ.L",  "name": "Invesco EQQQ NASDAQ-100",                            "sleeve": "tech", "ter": 0.0030, "isin": "IE0032077012", "wkn": "801498", "note": "Top 100 Nasdaq — broader growth (Amazon, Tesla, Meta)" },
+        { "id": "WTEC",  "yahoo": "WTEC.DE", "name": "Amundi MSCI World Information Technology",            "sleeve": "tech", "ter": 0.0025, "isin": "LU1900066884", "wkn": "A2H58A", "note": "Same index as XDWT, Amundi version" },
+        { "id": "L0CK",  "yahoo": "LOCK.L",  "name": "iShares Digital Security",                            "sleeve": "tech", "ter": 0.0040, "isin": "IE00BG0J4C88", "wkn": "A2JMGE", "note": "Cybersecurity narrow theme — diversification within tech" }
+      ]
+    },
+    {
+      "label": "EM — A3DRHJ alternatives",
+      "items": [
+        { "id": "JREM",  "yahoo": "JREM.DE", "name": "JPMorgan EM Research Enhanced Index",                "sleeve": "em",   "ter": 0.0035, "isin": "IE00BF4G6Y48", "wkn": "A2QFFR", "note": "Quant-enhanced JPM EM ETF — cheap alternative to A3DRHJ" },
+        { "id": "EIMI",  "yahoo": "EIMI.L",  "name": "iShares Core MSCI EM IMI",                            "sleeve": "em",   "ter": 0.0018, "isin": "IE00BKM4GZ66", "wkn": "A111X9", "note": "Broadest EM ~3,000 stocks incl. small caps — the benchmark" },
+        { "id": "FEM",   "yahoo": "0P0000WLR8.F", "name": "Fidelity Emerging Markets Y EUR",                "sleeve": "em",   "ter": 0.0093, "isin": "LU1116429852", "wkn": "A14M9C", "note": "Active Fidelity EM — established franchise, cheaper than A3DRHJ" },
+        { "id": "HMEF",  "yahoo": "HMEF.DE", "name": "HSBC MSCI Emerging Markets",                          "sleeve": "em",   "ter": 0.0015, "isin": "IE00B5SSQT16", "wkn": "A1C9B1", "note": "Cheapest broad EM ETF on market" }
+      ]
+    }
+  ]
+}

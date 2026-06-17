@@ -1,0 +1,157 @@
+{
+  "totalEur": 21302,
+  "baseline": {
+    "label": "Current plan (Idea 3 — updated, 2026-06-16)",
+    "weights": {
+      "VWCE": 0.609,
+      "SWDA": 0.069,
+      "BGF":  0.152,
+      "XDWT": 0.050,
+      "A3DRHJ": 0.120
+    }
+  },
+  "holdings": [
+    {
+      "id": "VWCE",
+      "name": "Vanguard FTSE All-World UCITS ETF (acc)",
+      "shortName": "VWCE",
+      "wkn": "A2PKXG",
+      "isin": "IE00BK5BQT80",
+      "yahoo": "VWCE.DE",
+      "ter": 0.0022,
+      "sleeve": "core",
+      "type": "ETF",
+      "eur": 12965,
+      "weight": 0.609,
+      "thesis": "Single-ticker global equity core: ~3,700 stocks across 49 countries, market-cap-weighted. The portfolio's main growth engine.",
+      "risk": [
+        "Drawdowns of 25-35% in global crashes are normal — sit through them, do not sell",
+        "~62% US weight means a US-led correction hits VWCE hard despite the 'world' label",
+        "Currency: ~60% USD exposure, EUR-strengthening years drag returns 5-10%"
+      ],
+      "upside": [
+        "Long-run real return ~5-7% p.a., nominal ~7-9% p.a. — the boring backbone",
+        "Auto-rebalances to winners (NVDA, Apple etc.) without manager risk",
+        "0.22% TER means almost no fee drag over 15+ years vs active funds"
+      ],
+      "links": {
+        "justETF": "https://www.justetf.com/en/etf-profile.html?isin=IE00BK5BQT80",
+        "fund": "https://www.vanguard.de/uk/portal/instl/uk/en/product.html#/fundDetail/etf/portId=9679"
+      }
+    },
+    {
+      "id": "SWDA",
+      "name": "iShares Core MSCI World UCITS ETF (acc)",
+      "shortName": "SWDA",
+      "wkn": "A0RPWH",
+      "isin": "IE00B4L5Y983",
+      "yahoo": "SWDA.L",
+      "ter": 0.0020,
+      "sleeve": "core",
+      "type": "ETF",
+      "eur": 1470,
+      "weight": 0.069,
+      "thesis": "Legacy MSCI World position (~1,500 developed-market stocks). ~85% overlap with VWCE. Kept because rolling it into VWCE may trigger CGT.",
+      "risk": [
+        "Almost full overlap with VWCE — diversification benefit ≈ 0",
+        "No emerging markets (~10% of world cap missed vs VWCE)",
+        "Two funds doing one job adds admin / Vorabpauschale paperwork"
+      ],
+      "upside": [
+        "Same engine as VWCE — won't underperform world equities",
+        "If sold at a small gain, freed cash buys VWCE simplification",
+        "0.20% TER, very efficient"
+      ],
+      "links": {
+        "justETF": "https://www.justetf.com/en/etf-profile.html?isin=IE00B4L5Y983"
+      }
+    },
+    {
+      "id": "BGF",
+      "name": "BGF Next Generation Technology Fund D2 EUR (acc)",
+      "shortName": "BGF Next Gen Tech",
+      "wkn": "A2N4LD",
+      "isin": "LU1861215975",
+      "yahoo": "0P0001EIDF",
+      "ter": 0.018,
+      "sleeve": "tech",
+      "type": "Active Fund",
+      "eur": 3242,
+      "weight": 0.152,
+      "thesis": "Active concentrated bet on next-gen tech (semis, AI infra, cyber, FinTech). Manager-picked, ~40-60 names, higher conviction than passive tech ETF.",
+      "risk": [
+        "Sector-concentrated active fund: 45-55% drawdowns possible in tech/AI crash",
+        "1.80% TER drags ~1.6%/yr vs cheap alternative — needs alpha to justify",
+        "Manager risk: thesis-driven, can sit on losers longer than an index"
+      ],
+      "upside": [
+        "Tech-only with manager skill could outperform broad tech +2-4%/yr in a good cycle",
+        "Exposure to private-tech-adjacent themes not yet at large-cap weight in index",
+        "Compounds aggressively when narrative supports tech (AI, semi cycles)"
+      ],
+      "links": {
+        "justETF": "https://www.justetf.com/en/etf-profile.html?isin=LU1861215975",
+        "fund": "https://www.blackrock.com/lu/individual/products/284324"
+      }
+    },
+    {
+      "id": "XDWT",
+      "name": "Xtrackers MSCI World Information Technology UCITS ETF",
+      "shortName": "XDWT",
+      "wkn": "A113FF",
+      "isin": "IE00BM67HT60",
+      "yahoo": "XDWT.DE",
+      "ter": 0.0025,
+      "sleeve": "tech",
+      "type": "ETF",
+      "eur": 1065,
+      "weight": 0.050,
+      "thesis": "Passive tech sleeve: MSCI World IT, ~150 stocks, ~70% US / 30% rest-of-world tech. Diversifies the BGF active bet at a 7x lower fee.",
+      "risk": [
+        "Still single-sector — 40-50% drawdowns in tech crashes (similar to BGF, calmer)",
+        "Heavily Apple/Microsoft/Nvidia concentrated at the top",
+        "USD-denominated effectively → EUR/USD swings amplify returns"
+      ],
+      "upside": [
+        "Tech beta at 0.25% TER — lets BGF keep its edge while you ride the sector cheaply",
+        "Long-run tech has outpaced world equity +3-5%/yr (path-dependent, not guaranteed)",
+        "Easy to scale up/down — liquid ETF, no Ausgabeaufschlag"
+      ],
+      "links": {
+        "justETF": "https://www.justetf.com/en/etf-profile.html?isin=IE00BM67HT60"
+      }
+    },
+    {
+      "id": "A3DRHJ",
+      "name": "onemarkets J.P. Morgan Emerging Countries Fund M EUR (acc)",
+      "shortName": "onemarkets JPM EM",
+      "wkn": "A3DRHJ",
+      "isin": "LU2503834363",
+      "yahoo": "0P0001PU76.F",
+      "ter": 0.020,
+      "sleeve": "em",
+      "type": "Active Fund",
+      "eur": 2560,
+      "weight": 0.120,
+      "thesis": "Active EM mandate wrapped by HVB/Structured Invest, run on a JPMorgan emerging-markets sleeve. Bet on manager + EM convergence vs passing through EIMI/JREM.",
+      "risk": [
+        "~2.0% TER is heavy — manager needs ~1.7%/yr alpha vs MSCI EM net to beat JREM (0.35%)",
+        "Onemarkets wrapper adds counterparty / structure layer (Structured Invest GmbH)",
+        "EM volatility + FX + political risk: 35-45% drawdowns plausible"
+      ],
+      "upside": [
+        "Active EM has historically been one of the few sleeves where managers do beat benchmark — if this one is in that camp, fee earns out",
+        "Asset breakdown more sensible vs cap-weighted EM (less China-tech concentration)",
+        "EM mean-reversion play: developed-market valuations stretched; EM cheap on most metrics"
+      ],
+      "links": {
+        "justETF": "https://www.justetf.com/en/etf-profile.html?isin=LU2503834363"
+      }
+    }
+  ],
+  "sleeves": {
+    "core": { "label": "Broad-world CORE", "color": "#60a5fa" },
+    "tech": { "label": "Tech tilt",        "color": "#a78bfa" },
+    "em":   { "label": "EM tilt",          "color": "#fb923c" }
+  }
+}

@@ -1,0 +1,309 @@
+{
+  "VWCE": [
+    {
+      "id": "VWRL",
+      "name": "Vanguard FTSE All-World UCITS ETF (dist)",
+      "wkn": "A1JX52", "isin": "IE00B3RBWM25", "yahoo": "VWRL.L",
+      "ter": 0.0022, "type": "ETF",
+      "thesis": "Same fund as VWCE but distributing — pays quarterly dividend instead of accumulating.",
+      "vsCurrent": { "feeDelta": 0.0, "overlap": 1.0 },
+      "whyPick": [
+        "Cashflow if you want to live off dividends later",
+        "Tax-friendly in some jurisdictions (NL, IE) — neutral in Germany"
+      ],
+      "whyNot": [
+        "Forces re-investment manually; in Germany Vorabpauschale already covers acc",
+        "Distributions trigger Abgeltungsteuer events vs deferral in acc — slight drag for accumulator"
+      ]
+    },
+    {
+      "id": "SPYI",
+      "name": "SPDR MSCI ACWI IMI UCITS ETF",
+      "wkn": "A1JJTD", "isin": "IE00B3YLTY66", "yahoo": "SPYI.DE",
+      "ter": 0.0017, "type": "ETF",
+      "thesis": "Broader than VWCE — ACWI IMI includes small caps (~9,000 stocks vs VWCE's 3,700).",
+      "vsCurrent": { "feeDelta": -0.0005, "overlap": 0.93 },
+      "whyPick": [
+        "Adds small-cap factor exposure for free (historically +1%/yr premium, with extra vol)",
+        "Cheaper TER 0.17% vs 0.22%"
+      ],
+      "whyNot": [
+        "Lower trading volume than VWCE → wider spreads in Xetra",
+        "Small-cap tilt can lag in mega-cap-led rallies (last 5 yrs)"
+      ]
+    },
+    {
+      "id": "ISAC",
+      "name": "iShares MSCI ACWI UCITS ETF (acc)",
+      "wkn": "A1JMDF", "isin": "IE00B6R52259", "yahoo": "ISAC.L",
+      "ter": 0.002, "type": "ETF",
+      "thesis": "iShares' answer to VWCE on the MSCI index family — ~2,800 large/mid stocks across DM + EM.",
+      "vsCurrent": { "feeDelta": -0.0002, "overlap": 0.95 },
+      "whyPick": [
+        "MSCI index family aligns with most institutional benchmarks → easier to compare returns",
+        "Marginal fee saving 0.20% vs 0.22%"
+      ],
+      "whyNot": [
+        "Smaller universe than VWCE (FTSE All-World is ~3,700 vs MSCI ACWI ~2,800)",
+        "No real reason to switch from VWCE just for 2bps"
+      ]
+    },
+    {
+      "id": "FWRA",
+      "name": "Invesco FTSE All-World UCITS ETF (acc)",
+      "wkn": "A3D8ZM", "isin": "IE000716YHJ7", "yahoo": "FWIA.DE",
+      "ter": 0.0015, "type": "ETF",
+      "thesis": "Newer Invesco FTSE All-World — same index as VWCE but cheaper. Uses sampling / synthetic replication.",
+      "vsCurrent": { "feeDelta": -0.0007, "overlap": 0.99 },
+      "whyPick": [
+        "Lowest fee in category (0.15%) — save ~€15/yr per €10k vs VWCE",
+        "Same FTSE All-World index → near-identical exposure"
+      ],
+      "whyNot": [
+        "Smaller AUM, less trading history → tracking error harder to verify",
+        "Switching costs (Abgeltungsteuer on VWCE gains) likely exceed the fee saving for 15+ years"
+      ]
+    }
+  ],
+  "SWDA": [
+    {
+      "id": "IWDA",
+      "name": "iShares Core MSCI World UCITS ETF (acc) — IWDA",
+      "wkn": "A0RPWH", "isin": "IE00B4L5Y983", "yahoo": "IWDA.AS",
+      "ter": 0.0020, "type": "ETF",
+      "thesis": "Same fund as SWDA, different listing (Amsterdam vs London). Pick by broker fee.",
+      "vsCurrent": { "feeDelta": 0.0, "overlap": 1.0 },
+      "whyPick": ["Identical exposure — pick whichever listing your broker prices best"],
+      "whyNot": ["No real choice to make — they're the same fund"]
+    },
+    {
+      "id": "EUNL",
+      "name": "iShares Core MSCI World UCITS ETF (Xetra, EUNL)",
+      "wkn": "A0RPWH", "isin": "IE00B4L5Y983", "yahoo": "EUNL.DE",
+      "ter": 0.0020, "type": "ETF",
+      "thesis": "Same fund again, Xetra listing — typically tightest spreads for German retail brokers.",
+      "vsCurrent": { "feeDelta": 0.0, "overlap": 1.0 },
+      "whyPick": ["EUR-denominated trading, tight Xetra spreads"],
+      "whyNot": ["Identical to SWDA — switching is admin, not strategy"]
+    },
+    {
+      "id": "XDWD",
+      "name": "Xtrackers MSCI World UCITS ETF 1C",
+      "wkn": "A1XEY2", "isin": "IE00BJ0KDQ92", "yahoo": "XDWD.DE",
+      "ter": 0.0019, "type": "ETF",
+      "thesis": "Xtrackers' MSCI World — same index, marginally cheaper, smaller AUM than iShares.",
+      "vsCurrent": { "feeDelta": -0.0001, "overlap": 1.0 },
+      "whyPick": ["1bp cheaper", "Provider diversification away from iShares"],
+      "whyNot": ["1bp saving is irrelevant at this size", "iShares MSCI World is industry-standard liquidity"]
+    },
+    {
+      "id": "ZPRV",
+      "name": "SPDR MSCI USA Small Cap Value Weighted UCITS ETF",
+      "wkn": "A12HU7", "isin": "IE00BSPLC413", "yahoo": "ZPRV.DE",
+      "ter": 0.003, "type": "ETF",
+      "thesis": "Differentiation play: instead of duplicating SWDA, replace it with a US small-cap value factor tilt.",
+      "vsCurrent": { "feeDelta": 0.001, "overlap": 0.05 },
+      "whyPick": [
+        "Genuine diversification — small-cap value has low correlation to MSCI World mega-caps",
+        "Long-run premium ~2-3%/yr (Fama-French) if it persists"
+      ],
+      "whyNot": [
+        "Factor premia have underperformed for 15+ years — no guarantee they return",
+        "30% higher TER and US-only — concentrates currency risk further"
+      ]
+    }
+  ],
+  "BGF": [
+    {
+      "id": "PolarCapGlobalTech",
+      "name": "Polar Capital Global Technology Fund",
+      "wkn": "A0J28T", "isin": "IE00B42W4J83", "yahoo": "0P00009NZ7.F",
+      "ter": 0.0125, "type": "Active Fund",
+      "thesis": "Long-running active global tech fund — broader than 'next gen', includes mature large-cap tech with concentrated picks.",
+      "vsCurrent": { "feeDelta": -0.0055, "overlap": 0.55 },
+      "whyPick": [
+        "0.55% cheaper TER — meaningful over 15 yrs",
+        "Longer track record (incepted 2001) through multiple tech cycles"
+      ],
+      "whyNot": [
+        "Less concentrated in next-gen themes — overlap with XDWT is higher than BGF",
+        "Soft-closed periodically; access can be broker-dependent"
+      ]
+    },
+    {
+      "id": "AllianzGlobalAI",
+      "name": "Allianz Global Artificial Intelligence",
+      "wkn": "A2DKAY", "isin": "LU1548497426", "yahoo": "0P0001545I.F",
+      "ter": 0.0205, "type": "Active Fund",
+      "thesis": "AI-themed active fund. Concentrated portfolio focused on the AI value chain (semis, infra, applications).",
+      "vsCurrent": { "feeDelta": 0.0025, "overlap": 0.45 },
+      "whyPick": [
+        "Purer AI exposure than BGF's broader 'next-gen' mandate",
+        "Strong recent performance riding the AI cycle"
+      ],
+      "whyNot": [
+        "Even higher TER (~2.05%)",
+        "Theme-fund risk: if AI narrative breaks, drawdown is severe (-50-60%)"
+      ]
+    },
+    {
+      "id": "PictetRobotics",
+      "name": "Pictet — Robotics R EUR",
+      "wkn": "A2APUW", "isin": "LU1279334210", "yahoo": "0P0000VEAN.F",
+      "ter": 0.022, "type": "Active Fund",
+      "thesis": "Thematic Pictet fund — automation, robotics, industrial AI. Different angle on 'tech' than BGF.",
+      "vsCurrent": { "feeDelta": 0.004, "overlap": 0.30 },
+      "whyPick": [
+        "Genuine diversification vs BGF (industrial/robotics, not consumer tech)",
+        "Pictet thematic franchise has strong process"
+      ],
+      "whyNot": [
+        "Highest fee in this peer set",
+        "Robotics theme has lagged broad tech materially since 2021"
+      ]
+    },
+    {
+      "id": "XDWT_OVERLAP",
+      "name": "Xtrackers MSCI World IT (XDWT) — already held",
+      "wkn": "A113FF", "isin": "IE00BM67HT60", "yahoo": "XDWT.DE",
+      "ter": 0.0025, "type": "ETF",
+      "thesis": "Replace BGF with XDWT entirely (Path A from June review). Cheap passive tech instead of paying for active.",
+      "vsCurrent": { "feeDelta": -0.0155, "overlap": 0.6 },
+      "whyPick": [
+        "Saves ~1.55%/yr — over 15 yrs that's ~25% of portfolio value compounded",
+        "Eliminates active-manager risk in a sector where most managers fail to beat the index"
+      ],
+      "whyNot": [
+        "Gives up the chance that BGF's manager is in the right tail",
+        "You already chose Path B (keep BGF + add XDWT) for the bigger tech bet — switching reverses that"
+      ]
+    }
+  ],
+  "XDWT": [
+    {
+      "id": "IUIT",
+      "name": "iShares S&P 500 Information Technology Sector UCITS ETF",
+      "wkn": "A142N1", "isin": "IE00B3WJKG14", "yahoo": "IUIT.L",
+      "ter": 0.0015, "type": "ETF",
+      "thesis": "US-only tech sector — purer mega-cap tech exposure (Apple, MSFT, NVDA dominate).",
+      "vsCurrent": { "feeDelta": -0.001, "overlap": 0.85 },
+      "whyPick": [
+        "Cheapest tech ETF in category (0.15%)",
+        "Even higher beta to the AI cycle than XDWT"
+      ],
+      "whyNot": [
+        "100% US — concentrates currency and country risk",
+        "Loses ASML/TSM-adjacent exposure that XDWT picks up"
+      ]
+    },
+    {
+      "id": "EQQQ",
+      "name": "Invesco EQQQ NASDAQ-100 UCITS ETF",
+      "wkn": "801498", "isin": "IE0032077012", "yahoo": "EQQQ.L",
+      "ter": 0.003, "type": "ETF",
+      "thesis": "Top 100 non-financial Nasdaq stocks. Tech-heavy but includes consumer (Amazon, Tesla), comms (Meta, Google).",
+      "vsCurrent": { "feeDelta": 0.0005, "overlap": 0.65 },
+      "whyPick": [
+        "Broader 'growth' exposure than pure IT sector",
+        "Most-traded tech-tilted ETF in Europe — deep liquidity"
+      ],
+      "whyNot": [
+        "Not pure tech — adds non-tech consumer/comm names",
+        "US-only, same currency concentration as IUIT"
+      ]
+    },
+    {
+      "id": "WTEC",
+      "name": "Amundi MSCI World Information Technology UCITS ETF",
+      "wkn": "A2H58A", "isin": "LU1900066884", "yahoo": "WTEC.DE",
+      "ter": 0.0025, "type": "ETF",
+      "thesis": "Same index as XDWT (MSCI World IT) — Amundi version. Genuinely interchangeable.",
+      "vsCurrent": { "feeDelta": 0.0, "overlap": 1.0 },
+      "whyPick": ["Provider diversification away from Xtrackers/DB"],
+      "whyNot": ["No exposure difference — pure provider swap"]
+    },
+    {
+      "id": "L0CK",
+      "name": "iShares Digital Security UCITS ETF",
+      "wkn": "A2JMGE", "isin": "IE00BG0J4C88", "yahoo": "LOCK.L",
+      "ter": 0.004, "type": "ETF",
+      "thesis": "Cybersecurity narrow theme — alternative tech sleeve with structural growth tailwind from cyber attacks/regulation.",
+      "vsCurrent": { "feeDelta": 0.0015, "overlap": 0.10 },
+      "whyPick": [
+        "Genuine diversification within tech — cyber spend grows independent of broad tech cycles",
+        "Themed but defensible secular thesis"
+      ],
+      "whyNot": [
+        "Narrow theme = wider drawdowns; cyber stocks crashed -50% in 2022",
+        "Higher TER, less liquid"
+      ]
+    }
+  ],
+  "A3DRHJ": [
+    {
+      "id": "JREM",
+      "name": "JPMorgan EM Research Enhanced Index Equity UCITS ETF (acc)",
+      "wkn": "A2QFFR", "isin": "IE00BF4G6Y48", "yahoo": "JREM.DE",
+      "ter": 0.0035, "type": "ETF",
+      "thesis": "Quant-enhanced JPM EM ETF — light active tilts on top of MSCI EM. The cheap alternative to A3DRHJ.",
+      "vsCurrent": { "feeDelta": -0.0165, "overlap": 0.85 },
+      "whyPick": [
+        "1.65%/yr fee saving — over 15 yrs compounds to ~30% of position value",
+        "Same JPM EM team intellectual framework, ETF wrapper"
+      ],
+      "whyNot": [
+        "Light alpha mandate — won't deviate as much from index as A3DRHJ can",
+        "You rejected this in June review citing 'better performance' for A3DRHJ — confirm thesis still holds"
+      ]
+    },
+    {
+      "id": "EIMI",
+      "name": "iShares Core MSCI EM IMI UCITS ETF",
+      "wkn": "A111X9", "isin": "IE00BKM4GZ66", "yahoo": "EIMI.L",
+      "ter": 0.0018, "type": "ETF",
+      "thesis": "Pure passive MSCI EM IMI — broadest EM exposure including small caps. The benchmark.",
+      "vsCurrent": { "feeDelta": -0.0182, "overlap": 0.80 },
+      "whyPick": [
+        "1.82%/yr cheaper — biggest fee saving in this set",
+        "~3,000 stocks incl. EM small-caps; broadest possible EM",
+        "Boring works in EM too — active EM has lagged index over 10-yr windows often"
+      ],
+      "whyNot": [
+        "Cap-weighted means heavy China + tech concentration (~30% China)",
+        "No protection from EM-specific governance / political risk via stock selection"
+      ]
+    },
+    {
+      "id": "FEM",
+      "name": "Fidelity Emerging Markets Fund Y EUR (acc)",
+      "wkn": "A14M9C", "isin": "LU1116429852", "yahoo": "0P0000WLR8.F",
+      "ter": 0.0093, "type": "Active Fund",
+      "thesis": "Active Fidelity EM mandate — strong long-term track, conviction picks across EM.",
+      "vsCurrent": { "feeDelta": -0.0107, "overlap": 0.60 },
+      "whyPick": [
+        "Cheaper than A3DRHJ by 1% while still active",
+        "Long established Fidelity EM franchise (Nick Price era + successors)"
+      ],
+      "whyNot": [
+        "Still much more expensive than EIMI/JREM",
+        "Manager-style risk — concentrated in quality/growth EM, lags in value-EM rallies"
+      ]
+    },
+    {
+      "id": "HMEF",
+      "name": "HSBC MSCI Emerging Markets UCITS ETF",
+      "wkn": "A1C9B1", "isin": "IE00B5SSQT16", "yahoo": "HMEF.DE",
+      "ter": 0.0015, "type": "ETF",
+      "thesis": "Cheapest broad EM ETF on the market — straight MSCI EM passive.",
+      "vsCurrent": { "feeDelta": -0.0185, "overlap": 0.78 },
+      "whyPick": [
+        "Lowest TER in EM space (0.15%)",
+        "Pure passive — no manager risk"
+      ],
+      "whyNot": [
+        "No small caps (MSCI EM standard, not IMI)",
+        "Same active-vs-passive tradeoff as EIMI; pick one or the other"
+      ]
+    }
+  ]
+}
