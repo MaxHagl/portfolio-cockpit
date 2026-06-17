@@ -2,6 +2,7 @@ import { holdingsData } from "@/lib/data";
 import HoldingsTable from "@/components/HoldingsTable";
 import SleeveBar from "@/components/SleeveBar";
 import AllocationDonut from "@/components/AllocationDonut";
+import LookThroughTable from "@/components/LookThroughTable";
 import Link from "next/link";
 
 export default function Dashboard() {
@@ -55,6 +56,11 @@ export default function Dashboard() {
       <div className="card">
         <div className="h-section">Holdings</div>
         <HoldingsTable data={holdingsData} />
+      </div>
+
+      <div className="card">
+        <div className="h-section">Look-through positions ≥ 3%</div>
+        <LookThroughTable minWeight={0.03} />
       </div>
 
       <div className="card text-sm text-muted">

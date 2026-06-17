@@ -1,5 +1,11 @@
 export type Sleeve = "core" | "tech" | "em";
 
+export interface FundTopHolding {
+  ticker: string;
+  name: string;
+  weight: number;
+}
+
 export interface Holding {
   id: string;
   name: string;
@@ -16,6 +22,8 @@ export interface Holding {
   risk: string[];
   upside: string[];
   links: Record<string, string>;
+  topHoldings?: FundTopHolding[];
+  topHoldingsAsOf?: string;
 }
 
 export interface Peer {
