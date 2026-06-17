@@ -12,6 +12,12 @@ export interface FundCountryWeight {
   weight: number;
 }
 
+export interface FundIndustryWeight {
+  industry: string;
+  sector: string;
+  weight: number;
+}
+
 export interface Holding {
   id: string;
   name: string;
@@ -32,6 +38,8 @@ export interface Holding {
   topHoldingsAsOf?: string;
   countryWeights?: FundCountryWeight[];
   countryWeightsAsOf?: string;
+  industryWeights?: FundIndustryWeight[];
+  industryWeightsAsOf?: string;
 }
 
 export interface Peer {

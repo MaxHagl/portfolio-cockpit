@@ -91,3 +91,49 @@ export function countryWeightsCoverage(): { fundsWithData: number; totalFunds: n
   );
   return { fundsWithData: withData, totalFunds: total, asOfDates: dates };
 }
+
+export interface LookThroughIndustry {
+  industry: string;
+  sector: string;
+  weight: number;
+  eur: number;
+  breakdown: { holdingId: string; holdingShortName: string; contribution: number }[];
+}
+
+export function lookThroughIndustries(): LookThroughIndustry[] {
+  const agg = new Map<string, LookThroughIndustry>();
+  for (const h of holdingsData.holdings) {
+    if (!h.industryWeights) continue;
+    for (const i of h.industryWeights) {
+      const contribution = h.weight * i.weight;
+      const existing = agg.get(i.industry);
+      if (existing) {
+        existing.weight += contribution;
+        existing.eur += contribution * holdingsData.totalEur;
+        existing.breakdown.push({ holdingId: h.id, holdingShortName: h.shortName, contribution });
+      } else {
+        agg.set(i.industry, {
+          industry: i.industry,
+          sector: i.sector,
+          weight: contribution,
+          eur: contribution * holdingsData.totalEur,
+          breakdown: [{ holdingId: h.id, holdingShortName: h.shortName, contribution }],
+        });
+      }
+    }
+  }
+  return Array.from(agg.values()).sort((a, b) => b.weight - a.weight);
+}
+
+export function industryWeightsCoverage(): { fundsWithData: number; totalFunds: number; asOfDates: string[] } {
+  const total = holdingsData.holdings.length;
+  const withData = holdingsData.holdings.filter((h) => h.industryWeights && h.industryWeights.length > 0).length;
+  const dates = Array.from(
+    new Set(
+      holdingsData.holdings
+        .map((h) => h.industryWeightsAsOf)
+        .filter((d): d is string => Boolean(d))
+    )
+  );
+  return { fundsWithData: withData, totalFunds: total, asOfDates: dates };
+}

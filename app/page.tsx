@@ -4,6 +4,7 @@ import SleeveBar from "@/components/SleeveBar";
 import AllocationDonut from "@/components/AllocationDonut";
 import LookThroughTable from "@/components/LookThroughTable";
 import LookThroughCountries from "@/components/LookThroughCountries";
+import LookThroughIndustries from "@/components/LookThroughIndustries";
 import Link from "next/link";
 
 export default function Dashboard() {
@@ -67,6 +68,11 @@ export default function Dashboard() {
       <div className="card">
         <div className="h-section">Look-through countries ≥ 1%</div>
         <LookThroughCountries minWeight={0.01} />
+      </div>
+
+      <div className="card">
+        <div className="h-section">Look-through industries ≥ 1%</div>
+        <LookThroughIndustries minWeight={0.01} />
       </div>
 
       <div className="card text-sm text-muted">

@@ -70,6 +70,47 @@
         { "code": "IT", "name": "Italy",         "weight": 0.008 },
         { "code": "ES", "name": "Spain",         "weight": 0.007 },
         { "code": "BR", "name": "Brazil",        "weight": 0.005 }
+      ],
+      "industryWeightsAsOf": "2026-06 (approx, FTSE All-World GICS)",
+      "industryWeights": [
+        { "industry": "Semiconductors",                       "sector": "Information Technology",     "weight": 0.060 },
+        { "industry": "Systems Software",                     "sector": "Information Technology",     "weight": 0.060 },
+        { "industry": "Tech Hardware, Storage & Peripherals", "sector": "Information Technology",     "weight": 0.050 },
+        { "industry": "Application Software",                 "sector": "Information Technology",     "weight": 0.020 },
+        { "industry": "IT Services",                          "sector": "Information Technology",     "weight": 0.020 },
+        { "industry": "Interactive Media & Services",         "sector": "Communication Services",     "weight": 0.040 },
+        { "industry": "Internet & Direct Marketing Retail",   "sector": "Consumer Discretionary",     "weight": 0.030 },
+        { "industry": "Diversified Banks",                    "sector": "Financials",                 "weight": 0.050 },
+        { "industry": "Investment Banking & Brokerage",       "sector": "Financials",                 "weight": 0.015 },
+        { "industry": "Multi-Sector Holdings",                "sector": "Financials",                 "weight": 0.015 },
+        { "industry": "Property & Casualty Insurance",        "sector": "Financials",                 "weight": 0.015 },
+        { "industry": "Life & Health Insurance",              "sector": "Financials",                 "weight": 0.010 },
+        { "industry": "Pharmaceuticals",                      "sector": "Health Care",                "weight": 0.040 },
+        { "industry": "Biotechnology",                        "sector": "Health Care",                "weight": 0.015 },
+        { "industry": "Health Care Equipment",                "sector": "Health Care",                "weight": 0.020 },
+        { "industry": "Managed Health Care",                  "sector": "Health Care",                "weight": 0.015 },
+        { "industry": "Automobile Manufacturers",             "sector": "Consumer Discretionary",     "weight": 0.020 },
+        { "industry": "Apparel & Luxury Goods",               "sector": "Consumer Discretionary",     "weight": 0.015 },
+        { "industry": "Restaurants",                          "sector": "Consumer Discretionary",     "weight": 0.010 },
+        { "industry": "Beverages",                            "sector": "Consumer Staples",           "weight": 0.020 },
+        { "industry": "Household Products",                   "sector": "Consumer Staples",           "weight": 0.015 },
+        { "industry": "Packaged Foods & Meats",               "sector": "Consumer Staples",           "weight": 0.015 },
+        { "industry": "Tobacco",                              "sector": "Consumer Staples",           "weight": 0.010 },
+        { "industry": "Aerospace & Defense",                  "sector": "Industrials",                "weight": 0.020 },
+        { "industry": "Industrial Machinery",                 "sector": "Industrials",                "weight": 0.020 },
+        { "industry": "Industrial Conglomerates",             "sector": "Industrials",                "weight": 0.010 },
+        { "industry": "Air Freight & Logistics",              "sector": "Industrials",                "weight": 0.010 },
+        { "industry": "Integrated Oil & Gas",                 "sector": "Energy",                     "weight": 0.020 },
+        { "industry": "Oil & Gas Exploration & Production",   "sector": "Energy",                     "weight": 0.010 },
+        { "industry": "Specialty Chemicals",                  "sector": "Materials",                  "weight": 0.015 },
+        { "industry": "Diversified Chemicals",                "sector": "Materials",                  "weight": 0.010 },
+        { "industry": "Metals & Mining",                      "sector": "Materials",                  "weight": 0.015 },
+        { "industry": "Diversified REITs",                    "sector": "Real Estate",                "weight": 0.015 },
+        { "industry": "Specialized REITs",                    "sector": "Real Estate",                "weight": 0.015 },
+        { "industry": "Electric Utilities",                   "sector": "Utilities",                  "weight": 0.020 },
+        { "industry": "Multi-Utilities",                      "sector": "Utilities",                  "weight": 0.010 },
+        { "industry": "Wireless Telecom Services",            "sector": "Communication Services",     "weight": 0.010 },
+        { "industry": "Communications Equipment",             "sector": "Information Technology",     "weight": 0.010 }
       ]
     },
     {
@@ -123,6 +164,34 @@
         { "code": "AU", "name": "Australia",       "weight": 0.020 },
         { "code": "NL", "name": "Netherlands",     "weight": 0.015 },
         { "code": "SE", "name": "Sweden",          "weight": 0.010 }
+      ],
+      "industryWeightsAsOf": "2026-06 (approx, MSCI World GICS)",
+      "industryWeights": [
+        { "industry": "Semiconductors",                       "sector": "Information Technology",     "weight": 0.065 },
+        { "industry": "Systems Software",                     "sector": "Information Technology",     "weight": 0.065 },
+        { "industry": "Tech Hardware, Storage & Peripherals", "sector": "Information Technology",     "weight": 0.055 },
+        { "industry": "Application Software",                 "sector": "Information Technology",     "weight": 0.025 },
+        { "industry": "IT Services",                          "sector": "Information Technology",     "weight": 0.020 },
+        { "industry": "Interactive Media & Services",         "sector": "Communication Services",     "weight": 0.045 },
+        { "industry": "Internet & Direct Marketing Retail",   "sector": "Consumer Discretionary",     "weight": 0.035 },
+        { "industry": "Diversified Banks",                    "sector": "Financials",                 "weight": 0.050 },
+        { "industry": "Investment Banking & Brokerage",       "sector": "Financials",                 "weight": 0.020 },
+        { "industry": "Multi-Sector Holdings",                "sector": "Financials",                 "weight": 0.018 },
+        { "industry": "Property & Casualty Insurance",        "sector": "Financials",                 "weight": 0.018 },
+        { "industry": "Pharmaceuticals",                      "sector": "Health Care",                "weight": 0.050 },
+        { "industry": "Biotechnology",                        "sector": "Health Care",                "weight": 0.015 },
+        { "industry": "Health Care Equipment",                "sector": "Health Care",                "weight": 0.025 },
+        { "industry": "Managed Health Care",                  "sector": "Health Care",                "weight": 0.020 },
+        { "industry": "Automobile Manufacturers",             "sector": "Consumer Discretionary",     "weight": 0.015 },
+        { "industry": "Apparel & Luxury Goods",               "sector": "Consumer Discretionary",     "weight": 0.015 },
+        { "industry": "Beverages",                            "sector": "Consumer Staples",           "weight": 0.020 },
+        { "industry": "Household Products",                   "sector": "Consumer Staples",           "weight": 0.015 },
+        { "industry": "Aerospace & Defense",                  "sector": "Industrials",                "weight": 0.025 },
+        { "industry": "Industrial Machinery",                 "sector": "Industrials",                "weight": 0.020 },
+        { "industry": "Integrated Oil & Gas",                 "sector": "Energy",                     "weight": 0.020 },
+        { "industry": "Specialty Chemicals",                  "sector": "Materials",                  "weight": 0.015 },
+        { "industry": "Specialized REITs",                    "sector": "Real Estate",                "weight": 0.020 },
+        { "industry": "Electric Utilities",                   "sector": "Utilities",                  "weight": 0.020 }
       ]
     },
     {
@@ -175,6 +244,19 @@
         { "code": "IL", "name": "Israel",          "weight": 0.020 },
         { "code": "CN", "name": "China",           "weight": 0.020 },
         { "code": "GB", "name": "United Kingdom",  "weight": 0.015 }
+      ],
+      "industryWeightsAsOf": "2026-06 (estimated, BGF Next Gen Tech sleeve)",
+      "industryWeights": [
+        { "industry": "Semiconductors",                       "sector": "Information Technology",     "weight": 0.420 },
+        { "industry": "Semiconductor Materials & Equipment",  "sector": "Information Technology",     "weight": 0.150 },
+        { "industry": "Systems Software",                     "sector": "Information Technology",     "weight": 0.090 },
+        { "industry": "Application Software",                 "sector": "Information Technology",     "weight": 0.060 },
+        { "industry": "Communications Equipment",             "sector": "Information Technology",     "weight": 0.060 },
+        { "industry": "IT Services",                          "sector": "Information Technology",     "weight": 0.050 },
+        { "industry": "Internet & Direct Marketing Retail",   "sector": "Consumer Discretionary",     "weight": 0.030 },
+        { "industry": "Tech Hardware, Storage & Peripherals", "sector": "Information Technology",     "weight": 0.030 },
+        { "industry": "Electronic Components",                "sector": "Information Technology",     "weight": 0.030 },
+        { "industry": "Interactive Media & Services",         "sector": "Communication Services",     "weight": 0.030 }
       ]
     },
     {
@@ -224,6 +306,18 @@
         { "code": "DE", "name": "Germany",         "weight": 0.020 },
         { "code": "GB", "name": "United Kingdom",  "weight": 0.015 },
         { "code": "FR", "name": "France",          "weight": 0.010 }
+      ],
+      "industryWeightsAsOf": "2026-06 (approx, MSCI World IT)",
+      "industryWeights": [
+        { "industry": "Systems Software",                     "sector": "Information Technology",     "weight": 0.230 },
+        { "industry": "Semiconductors",                       "sector": "Information Technology",     "weight": 0.220 },
+        { "industry": "Tech Hardware, Storage & Peripherals", "sector": "Information Technology",     "weight": 0.180 },
+        { "industry": "Application Software",                 "sector": "Information Technology",     "weight": 0.100 },
+        { "industry": "IT Services",                          "sector": "Information Technology",     "weight": 0.070 },
+        { "industry": "Semiconductor Materials & Equipment",  "sector": "Information Technology",     "weight": 0.060 },
+        { "industry": "Communications Equipment",             "sector": "Information Technology",     "weight": 0.040 },
+        { "industry": "Internet Services & Infrastructure",   "sector": "Information Technology",     "weight": 0.030 },
+        { "industry": "Electronic Components",                "sector": "Information Technology",     "weight": 0.020 }
       ]
     },
     {
@@ -278,6 +372,27 @@
         { "code": "ID", "name": "Indonesia",      "weight": 0.020 },
         { "code": "AE", "name": "UAE",            "weight": 0.015 },
         { "code": "PL", "name": "Poland",         "weight": 0.010 }
+      ],
+      "industryWeightsAsOf": "2026-06 (estimated, JPM EM sleeve)",
+      "industryWeights": [
+        { "industry": "Semiconductors",                       "sector": "Information Technology",     "weight": 0.150 },
+        { "industry": "Diversified Banks",                    "sector": "Financials",                 "weight": 0.120 },
+        { "industry": "Interactive Media & Services",         "sector": "Communication Services",     "weight": 0.080 },
+        { "industry": "Internet & Direct Marketing Retail",   "sector": "Consumer Discretionary",     "weight": 0.050 },
+        { "industry": "Integrated Oil & Gas",                 "sector": "Energy",                     "weight": 0.040 },
+        { "industry": "Tech Hardware, Storage & Peripherals", "sector": "Information Technology",     "weight": 0.035 },
+        { "industry": "Automobile Manufacturers",             "sector": "Consumer Discretionary",     "weight": 0.030 },
+        { "industry": "Pharmaceuticals",                      "sector": "Health Care",                "weight": 0.025 },
+        { "industry": "Diversified Metals & Mining",          "sector": "Materials",                  "weight": 0.025 },
+        { "industry": "Wireless Telecom Services",            "sector": "Communication Services",     "weight": 0.025 },
+        { "industry": "Property & Casualty Insurance",        "sector": "Financials",                 "weight": 0.020 },
+        { "industry": "Diversified REITs",                    "sector": "Real Estate",                "weight": 0.020 },
+        { "industry": "Steel",                                "sector": "Materials",                  "weight": 0.015 },
+        { "industry": "Restaurants",                          "sector": "Consumer Discretionary",     "weight": 0.015 },
+        { "industry": "Electric Utilities",                   "sector": "Utilities",                  "weight": 0.015 },
+        { "industry": "Construction & Engineering",           "sector": "Industrials",                "weight": 0.015 },
+        { "industry": "Food Products",                        "sector": "Consumer Staples",           "weight": 0.015 },
+        { "industry": "Aerospace & Defense",                  "sector": "Industrials",                "weight": 0.010 }
       ]
     }
   ],
