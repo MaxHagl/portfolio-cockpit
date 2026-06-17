@@ -48,8 +48,9 @@ export default function Dashboard() {
               <div className="text-xl font-semibold tabular-nums">{eur(holdingsData.totalEur)}</div>
             </div>
           </div>
-          <div className="flex gap-2">
+          <div className="flex gap-2 flex-wrap">
             <Link href="/sandbox" className="btn-accent">Open sandbox →</Link>
+            <Link href="/analysis/monte-carlo" className="btn-accent">Monte Carlo analysis →</Link>
             <a className="btn" href="https://www.justetf.com/" target="_blank" rel="noreferrer">justETF</a>
           </div>
         </div>
