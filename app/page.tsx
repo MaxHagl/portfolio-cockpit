@@ -59,8 +59,8 @@ export default function Dashboard() {
       </div>
 
       <div className="card">
-        <div className="h-section">Look-through positions ≥ 3%</div>
-        <LookThroughTable minWeight={0.03} />
+        <div className="h-section">Look-through positions ≥ 1%</div>
+        <LookThroughTable minWeight={0.01} />
       </div>
 
       <div className="card text-sm text-muted">
