@@ -111,6 +111,27 @@
         { "industry": "Multi-Utilities",                      "sector": "Utilities",                  "weight": 0.010 },
         { "industry": "Wireless Telecom Services",            "sector": "Communication Services",     "weight": 0.010 },
         { "industry": "Communications Equipment",             "sector": "Information Technology",     "weight": 0.010 }
+      ],
+      "themeWeightsAsOf": "2026-06 (estimated theme tagging, top names only)",
+      "themeWeights": [
+        { "theme": "AI Infrastructure",        "weight": 0.075 },
+        { "theme": "AI Supporting (semi eq, networking, memory)", "weight": 0.030 },
+        { "theme": "Cloud Hyperscalers",       "weight": 0.090 },
+        { "theme": "SaaS / Application Software", "weight": 0.030 },
+        { "theme": "Cybersecurity",            "weight": 0.010 },
+        { "theme": "E-commerce / Internet Retail", "weight": 0.040 },
+        { "theme": "Social Media & Digital Ads", "weight": 0.045 },
+        { "theme": "Consumer Tech Hardware",   "weight": 0.050 },
+        { "theme": "Electric Vehicles & Mobility", "weight": 0.020 },
+        { "theme": "Robotics & Automation",    "weight": 0.005 },
+        { "theme": "Biotech & Drug Discovery", "weight": 0.045 },
+        { "theme": "GLP-1 / Obesity Drugs",    "weight": 0.020 },
+        { "theme": "Defense & Aerospace",      "weight": 0.020 },
+        { "theme": "Renewable / Clean Energy", "weight": 0.010 },
+        { "theme": "Luxury Consumer",          "weight": 0.015 },
+        { "theme": "Banks (legacy)",           "weight": 0.050 },
+        { "theme": "Big Oil & Fossil Fuels",   "weight": 0.025 },
+        { "theme": "REITs / Real Estate",      "weight": 0.020 }
       ]
     },
     {
@@ -192,6 +213,26 @@
         { "industry": "Specialty Chemicals",                  "sector": "Materials",                  "weight": 0.015 },
         { "industry": "Specialized REITs",                    "sector": "Real Estate",                "weight": 0.020 },
         { "industry": "Electric Utilities",                   "sector": "Utilities",                  "weight": 0.020 }
+      ],
+      "themeWeightsAsOf": "2026-06 (estimated theme tagging, top names only)",
+      "themeWeights": [
+        { "theme": "AI Infrastructure",        "weight": 0.080 },
+        { "theme": "AI Supporting (semi eq, networking, memory)", "weight": 0.035 },
+        { "theme": "Cloud Hyperscalers",       "weight": 0.100 },
+        { "theme": "SaaS / Application Software", "weight": 0.035 },
+        { "theme": "Cybersecurity",            "weight": 0.012 },
+        { "theme": "E-commerce / Internet Retail", "weight": 0.045 },
+        { "theme": "Social Media & Digital Ads", "weight": 0.050 },
+        { "theme": "Consumer Tech Hardware",   "weight": 0.055 },
+        { "theme": "Electric Vehicles & Mobility", "weight": 0.020 },
+        { "theme": "Robotics & Automation",    "weight": 0.005 },
+        { "theme": "Biotech & Drug Discovery", "weight": 0.055 },
+        { "theme": "GLP-1 / Obesity Drugs",    "weight": 0.025 },
+        { "theme": "Defense & Aerospace",      "weight": 0.025 },
+        { "theme": "Luxury Consumer",          "weight": 0.015 },
+        { "theme": "Banks (legacy)",           "weight": 0.050 },
+        { "theme": "Big Oil & Fossil Fuels",   "weight": 0.025 },
+        { "theme": "REITs / Real Estate",      "weight": 0.020 }
       ]
     },
     {
@@ -257,6 +298,18 @@
         { "industry": "Tech Hardware, Storage & Peripherals", "sector": "Information Technology",     "weight": 0.030 },
         { "industry": "Electronic Components",                "sector": "Information Technology",     "weight": 0.030 },
         { "industry": "Interactive Media & Services",         "sector": "Communication Services",     "weight": 0.030 }
+      ],
+      "themeWeightsAsOf": "2026-06 (estimated, BGF Next Gen Tech is purpose-built thematic)",
+      "themeWeights": [
+        { "theme": "AI Infrastructure",        "weight": 0.420 },
+        { "theme": "AI Supporting (semi eq, networking, memory)", "weight": 0.250 },
+        { "theme": "Cybersecurity",            "weight": 0.060 },
+        { "theme": "SaaS / Application Software", "weight": 0.060 },
+        { "theme": "Cloud Hyperscalers",       "weight": 0.040 },
+        { "theme": "Robotics & Automation",    "weight": 0.040 },
+        { "theme": "Electric Vehicles & Mobility", "weight": 0.020 },
+        { "theme": "Quantum / Next-gen Compute", "weight": 0.030 },
+        { "theme": "E-commerce / Internet Retail", "weight": 0.030 }
       ]
     },
     {
@@ -318,6 +371,16 @@
         { "industry": "Communications Equipment",             "sector": "Information Technology",     "weight": 0.040 },
         { "industry": "Internet Services & Infrastructure",   "sector": "Information Technology",     "weight": 0.030 },
         { "industry": "Electronic Components",                "sector": "Information Technology",     "weight": 0.020 }
+      ],
+      "themeWeightsAsOf": "2026-06 (estimated, MSCI World IT large-cap)",
+      "themeWeights": [
+        { "theme": "AI Infrastructure",        "weight": 0.220 },
+        { "theme": "AI Supporting (semi eq, networking, memory)", "weight": 0.100 },
+        { "theme": "Cloud Hyperscalers",       "weight": 0.180 },
+        { "theme": "SaaS / Application Software", "weight": 0.130 },
+        { "theme": "Consumer Tech Hardware",   "weight": 0.180 },
+        { "theme": "Cybersecurity",            "weight": 0.030 },
+        { "theme": "Robotics & Automation",    "weight": 0.020 }
       ]
     },
     {
@@ -393,6 +456,19 @@
         { "industry": "Construction & Engineering",           "sector": "Industrials",                "weight": 0.015 },
         { "industry": "Food Products",                        "sector": "Consumer Staples",           "weight": 0.015 },
         { "industry": "Aerospace & Defense",                  "sector": "Industrials",                "weight": 0.010 }
+      ],
+      "themeWeightsAsOf": "2026-06 (estimated, JPM EM sleeve)",
+      "themeWeights": [
+        { "theme": "AI Infrastructure",        "weight": 0.090 },
+        { "theme": "Social Media & Digital Ads", "weight": 0.060 },
+        { "theme": "E-commerce / Internet Retail", "weight": 0.050 },
+        { "theme": "Banks (legacy)",           "weight": 0.140 },
+        { "theme": "Big Oil & Fossil Fuels",   "weight": 0.060 },
+        { "theme": "Electric Vehicles & Mobility", "weight": 0.025 },
+        { "theme": "Consumer Tech Hardware",   "weight": 0.040 },
+        { "theme": "REITs / Real Estate",      "weight": 0.020 },
+        { "theme": "Biotech & Drug Discovery", "weight": 0.020 },
+        { "theme": "Renewable / Clean Energy", "weight": 0.015 }
       ]
     }
   ],

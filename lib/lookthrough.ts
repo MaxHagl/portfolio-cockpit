@@ -137,3 +137,47 @@ export function industryWeightsCoverage(): { fundsWithData: number; totalFunds: 
   );
   return { fundsWithData: withData, totalFunds: total, asOfDates: dates };
 }
+
+export interface LookThroughTheme {
+  theme: string;
+  weight: number;
+  eur: number;
+  breakdown: { holdingId: string; holdingShortName: string; contribution: number }[];
+}
+
+export function lookThroughThemes(): LookThroughTheme[] {
+  const agg = new Map<string, LookThroughTheme>();
+  for (const h of holdingsData.holdings) {
+    if (!h.themeWeights) continue;
+    for (const t of h.themeWeights) {
+      const contribution = h.weight * t.weight;
+      const existing = agg.get(t.theme);
+      if (existing) {
+        existing.weight += contribution;
+        existing.eur += contribution * holdingsData.totalEur;
+        existing.breakdown.push({ holdingId: h.id, holdingShortName: h.shortName, contribution });
+      } else {
+        agg.set(t.theme, {
+          theme: t.theme,
+          weight: contribution,
+          eur: contribution * holdingsData.totalEur,
+          breakdown: [{ holdingId: h.id, holdingShortName: h.shortName, contribution }],
+        });
+      }
+    }
+  }
+  return Array.from(agg.values()).sort((a, b) => b.weight - a.weight);
+}
+
+export function themeWeightsCoverage(): { fundsWithData: number; totalFunds: number; asOfDates: string[] } {
+  const total = holdingsData.holdings.length;
+  const withData = holdingsData.holdings.filter((h) => h.themeWeights && h.themeWeights.length > 0).length;
+  const dates = Array.from(
+    new Set(
+      holdingsData.holdings
+        .map((h) => h.themeWeightsAsOf)
+        .filter((d): d is string => Boolean(d))
+    )
+  );
+  return { fundsWithData: withData, totalFunds: total, asOfDates: dates };
+}
