@@ -1,9 +1,11 @@
 import holdings from "@/data/holdings.json";
 import peers from "@/data/peers.json";
-import type { HoldingsFile, PeersFile, Holding, Peer } from "./types";
+import allocations from "@/data/allocations.json";
+import type { HoldingsFile, PeersFile, Holding, Peer, AllocationsFile } from "./types";
 
-export const holdingsData = holdings as HoldingsFile;
-export const peersData = peers as PeersFile;
+export const holdingsData = holdings as unknown as HoldingsFile;
+export const peersData = peers as unknown as PeersFile;
+export const allocationsData = allocations as unknown as AllocationsFile;
 
 export function getHolding(id: string): Holding | undefined {
   return holdingsData.holdings.find((h) => h.id === id);

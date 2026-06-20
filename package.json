@@ -8,7 +8,8 @@
     "start": "next start",
     "refresh-prices": ".venv/bin/python scripts/prefetch.py",
     "refresh-indices": ".venv/bin/python scripts/prefetch_indices.py",
-    "monte-carlo": ".venv/bin/python scripts/monte_carlo.py"
+    "monte-carlo": ".venv/bin/python scripts/monte_carlo.py",
+    "allocations-hrp": ".venv/bin/python scripts/allocations_hrp.py"
   },
   "dependencies": {
     "next": "16.2.9",

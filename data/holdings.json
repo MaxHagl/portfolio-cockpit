@@ -1,13 +1,19 @@
 {
-  "totalEur": 21302,
+  "totalEur": 21300,
   "baseline": {
-    "label": "Current plan (Idea 3 — updated, 2026-06-16)",
+    "label": "Current plan (revised 2026-06-20 — VWCE -5pp, add single stocks + AI Sparplan)",
     "weights": {
-      "VWCE": 0.609,
-      "SWDA": 0.069,
-      "BGF":  0.152,
-      "XDWT": 0.050,
-      "A3DRHJ": 0.120
+      "VWCE":   0.43,
+      "SWDA":   0.07,
+      "BGF":    0.15,
+      "TDIV":   0.10,
+      "JREM":   0.10,
+      "IUSA":   0.10,
+      "RENK":   0.0099,
+      "NOVO":   0.0099,
+      "PAAS":   0.0099,
+      "A2N6LC": 0.00,
+      "CASH":   0.0203
     }
   },
   "holdings": [
@@ -21,9 +27,9 @@
       "ter": 0.0022,
       "sleeve": "core",
       "type": "ETF",
-      "eur": 12965,
-      "weight": 0.609,
-      "thesis": "Single-ticker global equity core: ~3,700 stocks across 49 countries, market-cap-weighted. The portfolio's main growth engine.",
+      "eur": 9159,
+      "weight": 0.43,
+      "thesis": "Single-ticker global equity core: ~3,700 stocks across 49 countries, market-cap-weighted. The portfolio's main growth engine. 2026-06-20: trimmed 5pp to fund single-stock sleeve + AI Sparplan.",
       "risk": [
         "Drawdowns of 25-35% in global crashes are normal — sit through them, do not sell",
         "~62% US weight means a US-led correction hits VWCE hard despite the 'world' label",
@@ -144,8 +150,8 @@
       "ter": 0.0020,
       "sleeve": "core",
       "type": "ETF",
-      "eur": 1470,
-      "weight": 0.069,
+      "eur": 1491,
+      "weight": 0.07,
       "thesis": "Legacy MSCI World position (~1,500 developed-market stocks). ~85% overlap with VWCE. Kept because rolling it into VWCE may trigger CGT.",
       "risk": [
         "Almost full overlap with VWCE — diversification benefit ≈ 0",
@@ -245,8 +251,8 @@
       "ter": 0.018,
       "sleeve": "tech",
       "type": "Active Fund",
-      "eur": 3242,
-      "weight": 0.152,
+      "eur": 3195,
+      "weight": 0.15,
       "thesis": "Active concentrated bet on next-gen tech (semis, AI infra, cyber, FinTech). Manager-picked, ~40-60 names, higher conviction than passive tech ETF.",
       "risk": [
         "Sector-concentrated active fund: 45-55% drawdowns possible in tech/AI crash",
@@ -313,101 +319,113 @@
       ]
     },
     {
-      "id": "XDWT",
-      "name": "Xtrackers MSCI World Information Technology UCITS ETF",
-      "shortName": "XDWT",
-      "wkn": "A113FF",
-      "isin": "IE00BM67HT60",
-      "yahoo": "XDWT.DE",
-      "ter": 0.0025,
-      "sleeve": "tech",
+      "id": "TDIV",
+      "name": "VanEck Morningstar Developed Markets Dividend Leaders UCITS ETF (dist)",
+      "shortName": "VanEck DM Div Leaders",
+      "wkn": "A2JAHJ",
+      "isin": "NL0011683594",
+      "yahoo": "TDIV.AS",
+      "ter": 0.0038,
+      "sleeve": "dividend",
       "type": "ETF",
-      "eur": 1065,
-      "weight": 0.050,
-      "thesis": "Passive tech sleeve: MSCI World IT, ~150 stocks, ~70% US / 30% rest-of-world tech. Diversifies the BGF active bet at a 7x lower fee.",
+      "eur": 2130,
+      "weight": 0.10,
+      "thesis": "Concentrated 100-name developed-markets dividend sleeve, Morningstar Dividend Yield Focus index. Yield ~4-5%, value/old-economy tilt — diversifier vs growth-heavy core.",
       "risk": [
-        "Still single-sector — 40-50% drawdowns in tech crashes (similar to BGF, calmer)",
-        "Heavily Apple/Microsoft/Nvidia concentrated at the top",
-        "USD-denominated effectively → EUR/USD swings amplify returns"
+        "Distributing — quarterly dividends taxed as income in DE (Abgeltungsteuer 25%+soli), not deferred",
+        "Concentrated 100 names with energy/financials/staples tilt — underperforms in growth-led bull runs",
+        "Despite 'Dividend Leaders' label, ~50% US — not the EM/Europe sleeve originally intended"
       ],
       "upside": [
-        "Tech beta at 0.25% TER — lets BGF keep its edge while you ride the sector cheaply",
-        "Long-run tech has outpaced world equity +3-5%/yr (path-dependent, not guaranteed)",
-        "Easy to scale up/down — liquid ETF, no Ausgabeaufschlag"
+        "Yield ~4-5% gives real cashflow without selling shares",
+        "Value tilt diversifies vs VWCE/SWDA growth concentration — uncorrelated drawdown profile",
+        "Mega-cap dividend payers (Exxon, JPM, Pfizer, Verizon) — lower drawdowns than broad market in panics"
       ],
       "links": {
-        "justETF": "https://www.justetf.com/en/etf-profile.html?isin=IE00BM67HT60"
+        "justETF": "https://www.justetf.com/en/etf-profile.html?isin=NL0011683594",
+        "fund": "https://www.vaneck.com/de/de/anlagen/dividend-etf/"
       },
-      "topHoldingsAsOf": "2026-06 (approx, MSCI World IT index)",
+      "topHoldingsAsOf": "2026-06 (approx, Morningstar Dividend Yield Focus index)",
       "topHoldings": [
-        { "ticker": "AAPL", "name": "Apple",      "weight": 0.180 },
-        { "ticker": "MSFT", "name": "Microsoft",  "weight": 0.170 },
-        { "ticker": "NVDA", "name": "NVIDIA",     "weight": 0.120 },
-        { "ticker": "AVGO", "name": "Broadcom",   "weight": 0.050 },
-        { "ticker": "ORCL", "name": "Oracle",     "weight": 0.030 },
-        { "ticker": "AMD",  "name": "AMD",        "weight": 0.030 },
-        { "ticker": "CRM",  "name": "Salesforce", "weight": 0.025 },
-        { "ticker": "ASML", "name": "ASML",       "weight": 0.025 },
-        { "ticker": "ADBE", "name": "Adobe",      "weight": 0.020 },
-        { "ticker": "IBM",  "name": "IBM",        "weight": 0.018 }
+        { "ticker": "XOM",   "name": "ExxonMobil",          "weight": 0.060 },
+        { "ticker": "JPM",   "name": "JPMorgan Chase",      "weight": 0.050 },
+        { "ticker": "VZ",    "name": "Verizon",             "weight": 0.045 },
+        { "ticker": "CVX",   "name": "Chevron",             "weight": 0.040 },
+        { "ticker": "PFE",   "name": "Pfizer",              "weight": 0.035 },
+        { "ticker": "PM",    "name": "Philip Morris",       "weight": 0.030 },
+        { "ticker": "IBM",   "name": "IBM",                 "weight": 0.030 },
+        { "ticker": "T",     "name": "AT&T",                "weight": 0.028 },
+        { "ticker": "COP",   "name": "ConocoPhillips",      "weight": 0.025 },
+        { "ticker": "BHP",   "name": "BHP Group",           "weight": 0.022 }
       ],
-      "countryWeightsAsOf": "2026-06 (approx, MSCI World IT)",
+      "countryWeightsAsOf": "2026-06 (approx, VanEck factsheet)",
       "countryWeights": [
-        { "code": "US", "name": "United States",   "weight": 0.850 },
-        { "code": "JP", "name": "Japan",           "weight": 0.030 },
-        { "code": "NL", "name": "Netherlands",     "weight": 0.030 },
-        { "code": "DE", "name": "Germany",         "weight": 0.020 },
-        { "code": "GB", "name": "United Kingdom",  "weight": 0.015 },
-        { "code": "FR", "name": "France",          "weight": 0.010 }
+        { "code": "US", "name": "United States",   "weight": 0.500 },
+        { "code": "GB", "name": "United Kingdom",  "weight": 0.100 },
+        { "code": "AU", "name": "Australia",       "weight": 0.080 },
+        { "code": "FR", "name": "France",          "weight": 0.060 },
+        { "code": "JP", "name": "Japan",           "weight": 0.055 },
+        { "code": "CH", "name": "Switzerland",     "weight": 0.050 },
+        { "code": "CA", "name": "Canada",          "weight": 0.045 },
+        { "code": "DE", "name": "Germany",         "weight": 0.040 },
+        { "code": "NL", "name": "Netherlands",     "weight": 0.025 },
+        { "code": "ES", "name": "Spain",           "weight": 0.020 },
+        { "code": "IT", "name": "Italy",           "weight": 0.015 }
       ],
-      "industryWeightsAsOf": "2026-06 (approx, MSCI World IT)",
+      "industryWeightsAsOf": "2026-06 (approx, Morningstar DM Div Leaders)",
       "industryWeights": [
-        { "industry": "Systems Software",                     "sector": "Information Technology",     "weight": 0.230 },
-        { "industry": "Semiconductors",                       "sector": "Information Technology",     "weight": 0.220 },
-        { "industry": "Tech Hardware, Storage & Peripherals", "sector": "Information Technology",     "weight": 0.180 },
-        { "industry": "Application Software",                 "sector": "Information Technology",     "weight": 0.100 },
-        { "industry": "IT Services",                          "sector": "Information Technology",     "weight": 0.070 },
-        { "industry": "Semiconductor Materials & Equipment",  "sector": "Information Technology",     "weight": 0.060 },
-        { "industry": "Communications Equipment",             "sector": "Information Technology",     "weight": 0.040 },
-        { "industry": "Internet Services & Infrastructure",   "sector": "Information Technology",     "weight": 0.030 },
-        { "industry": "Electronic Components",                "sector": "Information Technology",     "weight": 0.020 }
+        { "industry": "Integrated Oil & Gas",                 "sector": "Energy",                     "weight": 0.180 },
+        { "industry": "Oil & Gas Exploration & Production",   "sector": "Energy",                     "weight": 0.060 },
+        { "industry": "Diversified Banks",                    "sector": "Financials",                 "weight": 0.150 },
+        { "industry": "Multi-Sector Holdings",                "sector": "Financials",                 "weight": 0.040 },
+        { "industry": "Pharmaceuticals",                      "sector": "Health Care",                "weight": 0.110 },
+        { "industry": "Tobacco",                              "sector": "Consumer Staples",           "weight": 0.060 },
+        { "industry": "Packaged Foods & Meats",               "sector": "Consumer Staples",           "weight": 0.030 },
+        { "industry": "Wireless Telecom Services",            "sector": "Communication Services",     "weight": 0.090 },
+        { "industry": "IT Services",                          "sector": "Information Technology",     "weight": 0.035 },
+        { "industry": "Electric Utilities",                   "sector": "Utilities",                  "weight": 0.060 },
+        { "industry": "Metals & Mining",                      "sector": "Materials",                  "weight": 0.045 },
+        { "industry": "Industrial Conglomerates",             "sector": "Industrials",                "weight": 0.030 },
+        { "industry": "Specialized REITs",                    "sector": "Real Estate",                "weight": 0.020 }
       ],
-      "themeWeightsAsOf": "2026-06 (estimated, MSCI World IT large-cap)",
+      "themeWeightsAsOf": "2026-06 (estimated, dividend-yield-focused composition)",
       "themeWeights": [
-        { "theme": "AI Infrastructure",        "weight": 0.220 },
-        { "theme": "AI Supporting (semi eq, networking, memory)", "weight": 0.100 },
-        { "theme": "Cloud Hyperscalers",       "weight": 0.180 },
-        { "theme": "SaaS / Application Software", "weight": 0.130 },
-        { "theme": "Consumer Tech Hardware",   "weight": 0.180 },
-        { "theme": "Cybersecurity",            "weight": 0.030 },
-        { "theme": "Robotics & Automation",    "weight": 0.020 }
+        { "theme": "Big Oil & Fossil Fuels",   "weight": 0.240 },
+        { "theme": "Banks (legacy)",           "weight": 0.190 },
+        { "theme": "Biotech & Drug Discovery", "weight": 0.110 },
+        { "theme": "Telecom Legacy",           "weight": 0.090 },
+        { "theme": "Consumer Staples Defensives", "weight": 0.090 },
+        { "theme": "Utilities Defensives",     "weight": 0.060 },
+        { "theme": "Tobacco",                  "weight": 0.060 },
+        { "theme": "REITs / Real Estate",      "weight": 0.020 }
       ]
     },
     {
-      "id": "A3DRHJ",
-      "name": "onemarkets J.P. Morgan Emerging Countries Fund M EUR (acc)",
-      "shortName": "onemarkets JPM EM",
-      "wkn": "A3DRHJ",
-      "isin": "LU2503834363",
-      "yahoo": "0P0001PU76.F",
-      "ter": 0.020,
+      "id": "JREM",
+      "name": "JPMorgan Global Emerging Markets Research Enhanced Index Equity Active UCITS ETF USD (acc)",
+      "shortName": "JPM EM Research Enhanced",
+      "wkn": "A2DWM5",
+      "isin": "IE00BF4G6Z54",
+      "yahoo": "JREM.DE",
+      "ter": 0.0035,
       "sleeve": "em",
-      "type": "Active Fund",
-      "eur": 2560,
-      "weight": 0.120,
-      "thesis": "Active EM mandate wrapped by HVB/Structured Invest, run on a JPMorgan emerging-markets sleeve. Bet on manager + EM convergence vs passing through EIMI.",
+      "type": "ETF",
+      "eur": 2130,
+      "weight": 0.10,
+      "thesis": "Cheap active-ish EM exposure (0.35% TER). MSCI EM benchmark with small over/underweights from JPM research — index-hugger with light alpha attempt.",
       "risk": [
-        "~2.0% TER is heavy — manager needs ~1.8%/yr alpha vs MSCI EM net to beat EIMI (0.18%)",
-        "Onemarkets wrapper adds counterparty / structure layer (Structured Invest GmbH)",
-        "EM volatility + FX + political risk: 35-45% drawdowns plausible"
+        "Tracks MSCI EM tightly → still ~30% China, ~20% Taiwan/Korea tech concentration",
+        "EM volatility + FX + political risk: 35-45% drawdowns plausible",
+        "Active mandate but tracking error tiny → unlikely to beat benchmark by more than 0.5-1.0%/yr"
       ],
       "upside": [
-        "Active EM has historically been one of the few sleeves where managers do beat benchmark — if this one is in that camp, fee earns out",
-        "Asset breakdown more sensible vs cap-weighted EM (less China-tech concentration)",
-        "EM mean-reversion play: developed-market valuations stretched; EM cheap on most metrics"
+        "10x cheaper than typical active EM (vs onemarkets at 2.0% TER) — fee drag minimal",
+        "Accumulating, UCITS, German Xetra liquidity — no tax-wrapper friction",
+        "EM mean-reversion play: developed valuations stretched, EM cheap on most metrics"
       ],
       "links": {
-        "justETF": "https://www.justetf.com/en/etf-profile.html?isin=LU2503834363"
+        "justETF": "https://www.justetf.com/en/etf-profile.html?isin=IE00BF4G6Z54",
+        "fund": "https://am.jpmorgan.com/gb/en/asset-management/adv/products/jpm-global-emerging-markets-research-enhanced-index-equity-active-ucits-etf-usd-acc-ie00bf4g6z54"
       },
       "topHoldingsAsOf": "2026-06 (estimated, JPM EM sleeve composition)",
       "topHoldings": [
@@ -470,11 +488,284 @@
         { "theme": "Biotech & Drug Discovery", "weight": 0.020 },
         { "theme": "Renewable / Clean Energy", "weight": 0.015 }
       ]
+    },
+    {
+      "id": "IUSA",
+      "name": "iShares Core S&P 500 UCITS ETF USD (dist)",
+      "shortName": "iShares S&P 500 (Dist)",
+      "wkn": "622391",
+      "isin": "IE0031442068",
+      "yahoo": "IUSA.DE",
+      "ter": 0.0007,
+      "sleeve": "core",
+      "type": "ETF",
+      "eur": 2130,
+      "weight": 0.10,
+      "thesis": "Pure US large-cap exposure on the S&P 500. Concentrated US bet on top of the VWCE/SWDA core — pushes US weighting higher.",
+      "risk": [
+        "Distributing — quarterly dividends taxed yearly in DE (vs ACC deferral). SXR8 (A0YEDG) is the ACC twin",
+        "100% US, ~70% overlap with VWCE/SWDA's US sleeve → marginal diversification benefit",
+        "USD-denominated; EUR-strengthening years drag 5-10%"
+      ],
+      "upside": [
+        "Cheapest sleeve in the book at 0.07% TER — almost zero fee drag",
+        "Quarterly cashflow if you want dividend income",
+        "Largest, deepest equity index — minimal tracking error, tight spreads"
+      ],
+      "links": {
+        "justETF": "https://www.justetf.com/en/etf-profile.html?isin=IE0031442068"
+      },
+      "topHoldingsAsOf": "2026-06 (approx, S&P 500)",
+      "topHoldings": [
+        { "ticker": "NVDA",  "name": "NVIDIA",       "weight": 0.075 },
+        { "ticker": "AAPL",  "name": "Apple",        "weight": 0.060 },
+        { "ticker": "MSFT",  "name": "Microsoft",    "weight": 0.060 },
+        { "ticker": "AMZN",  "name": "Amazon",       "weight": 0.045 },
+        { "ticker": "GOOGL", "name": "Alphabet A",   "weight": 0.030 },
+        { "ticker": "META",  "name": "Meta",         "weight": 0.028 },
+        { "ticker": "AVGO",  "name": "Broadcom",     "weight": 0.022 },
+        { "ticker": "TSLA",  "name": "Tesla",        "weight": 0.020 },
+        { "ticker": "BRK.B", "name": "Berkshire B",  "weight": 0.018 },
+        { "ticker": "JPM",   "name": "JPMorgan",     "weight": 0.017 }
+      ],
+      "countryWeightsAsOf": "2026-06 (S&P 500 is US-only)",
+      "countryWeights": [
+        { "code": "US", "name": "United States", "weight": 1.000 }
+      ],
+      "industryWeightsAsOf": "2026-06 (approx, S&P 500 GICS)",
+      "industryWeights": [
+        { "industry": "Systems Software",                     "sector": "Information Technology",     "weight": 0.080 },
+        { "industry": "Semiconductors",                       "sector": "Information Technology",     "weight": 0.080 },
+        { "industry": "Tech Hardware, Storage & Peripherals", "sector": "Information Technology",     "weight": 0.070 },
+        { "industry": "Application Software",                 "sector": "Information Technology",     "weight": 0.030 },
+        { "industry": "IT Services",                          "sector": "Information Technology",     "weight": 0.025 },
+        { "industry": "Interactive Media & Services",         "sector": "Communication Services",     "weight": 0.055 },
+        { "industry": "Internet & Direct Marketing Retail",   "sector": "Consumer Discretionary",     "weight": 0.045 },
+        { "industry": "Diversified Banks",                    "sector": "Financials",                 "weight": 0.055 },
+        { "industry": "Multi-Sector Holdings",                "sector": "Financials",                 "weight": 0.020 },
+        { "industry": "Property & Casualty Insurance",        "sector": "Financials",                 "weight": 0.020 },
+        { "industry": "Pharmaceuticals",                      "sector": "Health Care",                "weight": 0.045 },
+        { "industry": "Health Care Equipment",                "sector": "Health Care",                "weight": 0.030 },
+        { "industry": "Managed Health Care",                  "sector": "Health Care",                "weight": 0.020 },
+        { "industry": "Biotechnology",                        "sector": "Health Care",                "weight": 0.018 },
+        { "industry": "Automobile Manufacturers",             "sector": "Consumer Discretionary",     "weight": 0.020 },
+        { "industry": "Beverages",                            "sector": "Consumer Staples",           "weight": 0.025 },
+        { "industry": "Household Products",                   "sector": "Consumer Staples",           "weight": 0.018 },
+        { "industry": "Aerospace & Defense",                  "sector": "Industrials",                "weight": 0.025 },
+        { "industry": "Industrial Machinery",                 "sector": "Industrials",                "weight": 0.020 },
+        { "industry": "Integrated Oil & Gas",                 "sector": "Energy",                     "weight": 0.025 },
+        { "industry": "Electric Utilities",                   "sector": "Utilities",                  "weight": 0.025 },
+        { "industry": "Specialized REITs",                    "sector": "Real Estate",                "weight": 0.020 },
+        { "industry": "Specialty Chemicals",                  "sector": "Materials",                  "weight": 0.018 }
+      ],
+      "themeWeightsAsOf": "2026-06 (estimated, S&P 500 large-cap)",
+      "themeWeights": [
+        { "theme": "AI Infrastructure",        "weight": 0.110 },
+        { "theme": "AI Supporting (semi eq, networking, memory)", "weight": 0.045 },
+        { "theme": "Cloud Hyperscalers",       "weight": 0.120 },
+        { "theme": "SaaS / Application Software", "weight": 0.040 },
+        { "theme": "Cybersecurity",            "weight": 0.015 },
+        { "theme": "E-commerce / Internet Retail", "weight": 0.055 },
+        { "theme": "Social Media & Digital Ads", "weight": 0.060 },
+        { "theme": "Consumer Tech Hardware",   "weight": 0.065 },
+        { "theme": "Electric Vehicles & Mobility", "weight": 0.025 },
+        { "theme": "Biotech & Drug Discovery", "weight": 0.060 },
+        { "theme": "GLP-1 / Obesity Drugs",    "weight": 0.025 },
+        { "theme": "Defense & Aerospace",      "weight": 0.025 },
+        { "theme": "Banks (legacy)",           "weight": 0.055 },
+        { "theme": "Big Oil & Fossil Fuels",   "weight": 0.030 },
+        { "theme": "REITs / Real Estate",      "weight": 0.020 }
+      ]
+    },
+    {
+      "id": "RENK",
+      "name": "RENK Group AG",
+      "shortName": "RENK",
+      "wkn": "RENK73",
+      "isin": "DE000RENK730",
+      "yahoo": "R3NK.DE",
+      "ter": 0.0,
+      "sleeve": "stocks",
+      "type": "Stock",
+      "eur": 210,
+      "weight": 0.0099,
+      "thesis": "German defense gearbox & drivetrain maker — prime NATO rearmament play. Tank transmissions, naval propulsion, civil industrial. High order backlog tailwind through the rearmament cycle.",
+      "risk": [
+        "Single-name volatility 40-60% drawdowns possible; defense names trade on news flow",
+        "Political risk: peace dividend or arms-export tightening could compress multiple fast",
+        "Already richly valued on hype; multiple compression if order growth slows"
+      ],
+      "upside": [
+        "Multi-year rearmament tailwind across NATO budgets through 2030",
+        "Mission-critical gearbox supplier with high switching costs; pricing power",
+        "Backlog gives multi-year revenue visibility — defensive characteristics for cyclical"
+      ],
+      "links": {
+        "investorRelations": "https://www.renk.com/en/investor-relations"
+      },
+      "topHoldingsAsOf": "2026-06 (self)",
+      "topHoldings": [
+        { "ticker": "R3NK", "name": "RENK Group AG", "weight": 1.0 }
+      ],
+      "countryWeightsAsOf": "2026-06 (HQ)",
+      "countryWeights": [
+        { "code": "DE", "name": "Germany", "weight": 1.0 }
+      ],
+      "industryWeightsAsOf": "2026-06 (GICS)",
+      "industryWeights": [
+        { "industry": "Aerospace & Defense", "sector": "Industrials", "weight": 1.0 }
+      ],
+      "themeWeightsAsOf": "2026-06 (single-stock tag)",
+      "themeWeights": [
+        { "theme": "Defense & Aerospace", "weight": 1.0 }
+      ]
+    },
+    {
+      "id": "NOVO",
+      "name": "Novo Nordisk A/S (B-shares)",
+      "shortName": "Novo Nordisk",
+      "wkn": "A1X4W7",
+      "isin": "DK0060534915",
+      "yahoo": "NOVOB.DE",
+      "ter": 0.0,
+      "sleeve": "stocks",
+      "type": "Stock",
+      "eur": 210,
+      "weight": 0.0099,
+      "thesis": "Global leader in diabetes + GLP-1 obesity care (Ozempic/Wegovy). Wide moat, strong R&D pipeline, structurally growing TAM as obesity prevalence rises.",
+      "risk": [
+        "GLP-1 competition intensifies (Lilly tirzepatide, oral GLP-1s, biosimilars post-2030)",
+        "Pricing pressure from US payors/Medicare and EU reimbursement reviews",
+        "FX exposure: DKK pegged to EUR but US revenue translates to USD"
+      ],
+      "upside": [
+        "GLP-1 demand vastly outstrips supply through late 2020s; capacity expansion → margin tailwind",
+        "Pipeline beyond obesity: NASH, cardiovascular, Alzheimer's optionality",
+        "Defensive cashflow profile — healthcare compounder in any macro"
+      ],
+      "links": {
+        "investorRelations": "https://www.novonordisk.com/investors.html"
+      },
+      "topHoldingsAsOf": "2026-06 (self)",
+      "topHoldings": [
+        { "ticker": "NOVOB", "name": "Novo Nordisk A/S", "weight": 1.0 }
+      ],
+      "countryWeightsAsOf": "2026-06 (HQ)",
+      "countryWeights": [
+        { "code": "DK", "name": "Denmark", "weight": 1.0 }
+      ],
+      "industryWeightsAsOf": "2026-06 (GICS)",
+      "industryWeights": [
+        { "industry": "Pharmaceuticals", "sector": "Health Care", "weight": 1.0 }
+      ],
+      "themeWeightsAsOf": "2026-06 (single-stock tag)",
+      "themeWeights": [
+        { "theme": "GLP-1 / Obesity Drugs", "weight": 0.8 },
+        { "theme": "Biotech & Drug Discovery", "weight": 0.2 }
+      ]
+    },
+    {
+      "id": "PAAS",
+      "name": "Pan American Silver Corp.",
+      "shortName": "Pan Am Silver",
+      "wkn": "876617",
+      "isin": "CA6979001089",
+      "yahoo": "PA2.DE",
+      "ter": 0.0,
+      "sleeve": "stocks",
+      "type": "Stock",
+      "eur": 210,
+      "weight": 0.0099,
+      "thesis": "One of the largest primary silver producers globally — silver + gold mining across the Americas. Inflation/USD-debasement hedge with operating leverage to metal price.",
+      "risk": [
+        "Highly cyclical: 50-70% drawdowns in metal downturns; juniors get crushed",
+        "Operating risk in LatAm (permitting, taxation, expropriation, FX)",
+        "AISC creep can wipe margins if silver flatlines"
+      ],
+      "upside": [
+        "Silver supply structurally tight; industrial demand (solar, EV electronics) rising",
+        "Operating leverage: 20% rise in silver → ~50%+ rise in cashflow",
+        "Diversifier vs equity-heavy book — low correlation to VWCE/tech"
+      ],
+      "links": {
+        "investorRelations": "https://www.panamericansilver.com/investors/"
+      },
+      "topHoldingsAsOf": "2026-06 (self)",
+      "topHoldings": [
+        { "ticker": "PAAS", "name": "Pan American Silver Corp.", "weight": 1.0 }
+      ],
+      "countryWeightsAsOf": "2026-06 (HQ; mines across MX/PE/AR/BO/CA/US)",
+      "countryWeights": [
+        { "code": "CA", "name": "Canada", "weight": 1.0 }
+      ],
+      "industryWeightsAsOf": "2026-06 (GICS)",
+      "industryWeights": [
+        { "industry": "Silver", "sector": "Materials", "weight": 0.7 },
+        { "industry": "Gold", "sector": "Materials", "weight": 0.3 }
+      ],
+      "themeWeightsAsOf": "2026-06 (single-stock tag)",
+      "themeWeights": [
+        { "theme": "Precious Metals / Gold & Silver", "weight": 1.0 }
+      ]
+    },
+    {
+      "id": "A2N6LC",
+      "name": "Xtrackers Artificial Intelligence & Big Data UCITS ETF 1C (acc)",
+      "shortName": "Xtrackers AI & Big Data",
+      "wkn": "A2N6LC",
+      "isin": "IE00BGV5VN51",
+      "yahoo": "XAIX.DE",
+      "ter": 0.0035,
+      "sleeve": "tech",
+      "type": "ETF (Sparplan)",
+      "eur": 0,
+      "weight": 0.0,
+      "thesis": "AI & Big Data thematic ETF tracking Nasdaq Global AI & Big Data. Sparplan €50/mo — dollar-cost-average into the AI theme on top of BGF active tech sleeve.",
+      "risk": [
+        "Concentrated thematic AI bet: 50%+ drawdowns plausible in tech/AI corrections",
+        "High overlap with BGF Next Gen Tech (semis, hyperscalers) — double-up on same theme",
+        "Theme ETFs underperform after first 12-24 months of flows; momentum risk"
+      ],
+      "upside": [
+        "Pure AI exposure on top of broad cores — captures the structural theme directly",
+        "0.35% TER cheap for thematic; Xetra-traded, no Ausgabeaufschlag",
+        "Sparplan €50/mo = €600/yr DCA — small, disciplined ramp without timing risk"
+      ],
+      "links": {
+        "justETF": "https://www.justetf.com/en/etf-profile.html?isin=IE00BGV5VN51"
+      },
+      "sparplan": { "monthlyEur": 50, "startedAt": "2026-06-20" }
+    },
+    {
+      "id": "CASH",
+      "name": "Cash (Sparplan reserve)",
+      "shortName": "Cash",
+      "wkn": "—",
+      "isin": "—",
+      "yahoo": "EUR",
+      "ter": 0.0,
+      "sleeve": "cash",
+      "type": "Cash",
+      "eur": 435,
+      "weight": 0.0203,
+      "thesis": "EUR cash buffer freed from VWCE trim. Funds upcoming Sparplan tranches into A2N6LC and acts as dry powder for opportunistic buys.",
+      "risk": [
+        "Negative real return at 2-3% inflation — cash drag if held too long",
+        "No yield unless parked in money-market sleeve / Tagesgeld"
+      ],
+      "upside": [
+        "Optionality: dry powder for drawdown buys or new sleeve adds",
+        "Funds ~9 months of A2N6LC Sparplan at current €50/mo cadence"
+      ],
+      "links": {}
     }
   ],
   "sleeves": {
-    "core": { "label": "Broad-world CORE", "color": "#60a5fa" },
-    "tech": { "label": "Tech tilt",        "color": "#a78bfa" },
-    "em":   { "label": "EM tilt",          "color": "#fb923c" }
+    "core":     { "label": "Broad-world CORE", "color": "#60a5fa" },
+    "tech":     { "label": "Tech tilt",        "color": "#a78bfa" },
+    "em":       { "label": "EM tilt",          "color": "#fb923c" },
+    "dividend": { "label": "Dividend tilt",    "color": "#34d399" },
+    "stocks":   { "label": "Single stocks",    "color": "#f472b6" },
+    "cash":     { "label": "Cash",             "color": "#9ca3af" }
   }
 }

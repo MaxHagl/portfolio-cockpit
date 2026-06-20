@@ -42,6 +42,7 @@ from mc_metrics import (
 from mc_tax import apply_vorabpauschale
 from mc_fx import apply_fx_overlay, sample_fx_paths
 from mc_stress import run_stress_replay
+from mc_riskscore import composite_risk_score, risk_band, sharpe_like
 
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -82,9 +83,9 @@ def build_scenarios(baseline_weights: dict[str, float], asset_order: list[str]) 
     return {
         "baseline":    {"label": "Current baseline portfolio", "weights": to_array(baseline_weights)},
         "vwceOnly":    {"label": "100% VWCE (do-nothing-fancy)", "weights": to_array({"VWCE": 1.0})},
-        "equalWeight": {"label": "Equal-weight (20% each)",      "weights": to_array({a: 0.2 for a in asset_order[:5]})},
-        "techOnly":    {"label": "Tech only (BGF + XDWT)",       "weights": to_array({"BGF": 0.5, "XDWT": 0.5})},
-        "councilFix":  {"label": "Council recommendation",       "weights": to_array({"VWCE": 0.70, "XDWT": 0.18, "A3DRHJ": 0.12})},
+        "equalWeight": {"label": f"Equal-weight ({100/len(asset_order):.1f}% each)", "weights": to_array({a: 1.0/len(asset_order) for a in asset_order})},
+        "techOnly":    {"label": "Tech only (100% BGF)",         "weights": to_array({"BGF": 1.0})},
+        "councilFix":  {"label": "Cheap-passive (VWCE 70 / IUSA 15 / JREM 15)", "weights": to_array({"VWCE": 0.70, "IUSA": 0.15, "JREM": 0.15})},
     }
 
 
@@ -117,6 +118,10 @@ def metrics_to_dict(metrics: dict, wealth: np.ndarray, weights: np.ndarray, labe
     full=True: include fan chart, sample paths, histograms (primary scenarios)
     full=False: only summary stats (for sensitivity variants)
     """
+    risk = composite_risk_score(
+        metrics["terminal"], metrics["maxDrawdown"], metrics["annVol"],
+        metrics["timeUnderwaterDays"], starting_eur, HORIZON_YEARS
+    )
     out = {
         "label": label,
         "weights": {a: float(w) for a, w in zip(asset_order, weights) if w > 1e-6},
@@ -127,6 +132,10 @@ def metrics_to_dict(metrics: dict, wealth: np.ndarray, weights: np.ndarray, labe
         "timeUnderwaterDays": quantile_summary(metrics["timeUnderwaterDays"]),
         "probabilities": probability_callouts(metrics, starting_eur),
         "goalProbabilities": goal_probabilities(metrics, GOAL_TARGETS),
+        "riskScore": risk["score"],
+        "riskBand": risk_band(risk["score"]),
+        "riskComponents": risk["components"],
+        "sharpeLike": sharpe_like(float(np.median(metrics["annReturn"])), risk["score"]),
     }
     if full:
         out["fanChart"] = fan_chart(wealth, step_days=21)

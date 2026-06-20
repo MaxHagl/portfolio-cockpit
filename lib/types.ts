@@ -1,4 +1,17 @@
-export type Sleeve = "core" | "tech" | "em";
+export type Sleeve = "core" | "tech" | "em" | "dividend" | "stocks" | "cash";
+
+export interface AllocationsFile {
+  generatedAt: string;
+  method: string;
+  linkage?: string;
+  paper?: string;
+  note?: string;
+  returnsWindow?: { start: string; end: string; days: number };
+  current: Record<string, number>;
+  hrp: Record<string, number> | null;
+  delta: Record<string, number> | null;
+  correlations: { a: string; b: string; rho: number }[];
+}
 
 export interface FundTopHolding {
   ticker: string;

@@ -30,6 +30,7 @@ from mc_metrics import (
     fan_chart, sample_paths, histogram, probability_callouts, goal_probabilities,
     apply_inflation,
 )
+from mc_riskscore import composite_risk_score, risk_band, sharpe_like
 from mc_tax import apply_vorabpauschale
 from mc_capgains import compute_realized_gain_tax, apply_lump_sum_sale_tax, estimate_vorab_paid_during_phase
 from mc_cashflows import build_dca_schedule, build_withdrawal_schedule, BROKER_FEES
@@ -68,7 +69,11 @@ def per_asset_ters(asset_order, meta):
     return np.array([ter_map.get(a, 0.0) for a in asset_order])
 
 
-def summarize(metrics, wealth, weights, label, asset_order, starting_eur, full=True, total_contributed=None):
+def summarize(metrics, wealth, weights, label, asset_order, starting_eur, full=True, total_contributed=None, horizon_yr=HORIZON_YEARS):
+    risk = composite_risk_score(
+        metrics["terminal"], metrics["maxDrawdown"], metrics["annVol"],
+        metrics["timeUnderwaterDays"], starting_eur, horizon_yr
+    )
     out = {
         "label": label,
         "weights": {a: float(w) for a, w in zip(asset_order, weights) if w > 1e-6},
@@ -79,6 +84,10 @@ def summarize(metrics, wealth, weights, label, asset_order, starting_eur, full=T
         "timeUnderwaterDays": quantile_summary(metrics["timeUnderwaterDays"]),
         "probabilities": probability_callouts(metrics, starting_eur),
         "goalProbabilities": goal_probabilities(metrics, GOAL_TARGETS),
+        "riskScore": risk["score"],
+        "riskBand": risk_band(risk["score"]),
+        "riskComponents": risk["components"],
+        "sharpeLike": sharpe_like(float(np.median(metrics["annReturn"])), risk["score"]),
     }
     if total_contributed is not None:
         out["totalContributed"] = float(np.median(total_contributed))
@@ -181,7 +190,11 @@ def main():
 
     # ESG drag
     print("\n  ESG screen (-10bps drag)...")
-    ter_esg = ter_annual + np.array([0.0010, 0.0010, 0, 0, 0])  # add 10bps to VWCE/SWDA only
+    esg_drag = np.zeros_like(ter_annual)
+    for i, hid in enumerate(asset_order):
+        if hid in ("VWCE", "SWDA"):
+            esg_drag[i] = 0.0010
+    ter_esg = ter_annual + esg_drag  # add 10bps to VWCE/SWDA only
     cf50 = build_dca_schedule(50, HORIZON_DAYS)
     wealth_esg = simulate_portfolio_wealth(boot_paths, weights_baseline, starting_eur,
                                             ter_esg, "quarterly", cashflows=cf50)

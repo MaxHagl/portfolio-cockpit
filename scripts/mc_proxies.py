@@ -37,6 +37,9 @@ PROXY = {
     "BGF":    ("IXN",   True,  1),
     "XDWT":   ("XDWD",  False, 0),
     "A3DRHJ": ("EEM",   True, -1),
+    "TDIV":   ("XDWD",  False, 0),   # DM Dividend Leaders → MSCI World proxy
+    "JREM":   ("EEM",   True, -1),   # JPM EM Research Enhanced → MSCI EM
+    "IUSA":   ("XDWD",  False, 0),   # S&P 500 → MSCI World proxy
 }
 
 

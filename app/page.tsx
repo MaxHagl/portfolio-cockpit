@@ -1,4 +1,4 @@
-import { holdingsData } from "@/lib/data";
+import { holdingsData, allocationsData } from "@/lib/data";
 import HoldingsTable from "@/components/HoldingsTable";
 import SleeveBar from "@/components/SleeveBar";
 import AllocationDonut from "@/components/AllocationDonut";
@@ -57,8 +57,20 @@ export default function Dashboard() {
       </div>
 
       <div className="card">
-        <div className="h-section">Holdings</div>
-        <HoldingsTable data={holdingsData} />
+        <div className="h-section">
+          Holdings
+          {allocationsData.returnsWindow && allocationsData.hrp && (
+            <span className="ml-2 text-xs text-muted font-normal">
+              HRP suggestion based on {allocationsData.returnsWindow.days} days
+              ({allocationsData.returnsWindow.start} → {allocationsData.returnsWindow.end}),
+              linkage: {allocationsData.linkage}
+            </span>
+          )}
+          {!allocationsData.hrp && allocationsData.note && (
+            <span className="ml-2 text-xs text-muted font-normal">{allocationsData.note}</span>
+          )}
+        </div>
+        <HoldingsTable data={holdingsData} allocations={allocationsData} />
       </div>
 
       <div className="card">

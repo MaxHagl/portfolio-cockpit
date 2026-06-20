@@ -16,8 +16,9 @@ LONG_HISTORY_MAP = {
     "VWCE":   ("URTH", "2012-06-01", "SPX"),
     "SWDA":   ("URTH", "2012-06-01", "SPX"),
     "BGF":    ("IXN",  "2001-11-27", "NDX"),
-    "XDWT":   ("IXN",  "2001-11-27", "NDX"),
-    "A3DRHJ": ("EEM",  "2003-04-15", "SPX"),
+    "TDIV":   ("URTH", "2012-06-01", "SPX"),   # DM Dividend Leaders → MSCI World stitch
+    "JREM":   ("EEM",  "2003-04-15", "SPX"),
+    "IUSA":   ("SPX",  "2000-01-03", "SPX"),   # S&P 500 → native SPX history
 }
 
 
