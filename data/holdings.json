@@ -1,19 +1,19 @@
 {
-  "totalEur": 21300,
+  "totalEur": 34865,
   "baseline": {
-    "label": "Current plan (revised 2026-06-20 — VWCE -5pp, add single stocks + AI Sparplan)",
+    "label": "Current plan (revised 2026-06-20 — add €14k high-yield savings to net-worth view)",
     "weights": {
-      "VWCE":   0.43,
-      "SWDA":   0.07,
-      "BGF":    0.15,
-      "TDIV":   0.10,
-      "JREM":   0.10,
-      "IUSA":   0.10,
-      "RENK":   0.0099,
-      "NOVO":   0.0099,
-      "PAAS":   0.0099,
-      "A2N6LC": 0.00,
-      "CASH":   0.0203
+      "VWCE": 0.2627,
+      "SWDA": 0.0428,
+      "BGF": 0.0916,
+      "TDIV": 0.0611,
+      "JREM": 0.0611,
+      "IUSA": 0.0611,
+      "RENK": 0.006,
+      "NOVO": 0.006,
+      "PAAS": 0.006,
+      "A2N6LC": 0.0,
+      "CASH": 0.4016
     }
   },
   "holdings": [
@@ -28,7 +28,7 @@
       "sleeve": "core",
       "type": "ETF",
       "eur": 9159,
-      "weight": 0.43,
+      "weight": 0.2627,
       "thesis": "Single-ticker global equity core: ~3,700 stocks across 49 countries, market-cap-weighted. The portfolio's main growth engine. 2026-06-20: trimmed 5pp to fund single-stock sleeve + AI Sparplan.",
       "risk": [
         "Drawdowns of 25-35% in global crashes are normal — sit through them, do not sell",
@@ -46,98 +46,412 @@
       },
       "topHoldingsAsOf": "2026-06 (approx, FTSE All-World factsheet)",
       "topHoldings": [
-        { "ticker": "NVDA",  "name": "NVIDIA",       "weight": 0.050 },
-        { "ticker": "AAPL",  "name": "Apple",        "weight": 0.040 },
-        { "ticker": "MSFT",  "name": "Microsoft",    "weight": 0.040 },
-        { "ticker": "AMZN",  "name": "Amazon",       "weight": 0.030 },
-        { "ticker": "GOOGL", "name": "Alphabet A",   "weight": 0.020 },
-        { "ticker": "META",  "name": "Meta",         "weight": 0.018 },
-        { "ticker": "TSM",   "name": "TSMC",         "weight": 0.016 },
-        { "ticker": "AVGO",  "name": "Broadcom",     "weight": 0.015 },
-        { "ticker": "TSLA",  "name": "Tesla",        "weight": 0.014 },
-        { "ticker": "BRK.B", "name": "Berkshire B",  "weight": 0.013 },
-        { "ticker": "JPM",   "name": "JPMorgan",     "weight": 0.012 }
+        {
+          "ticker": "NVDA",
+          "name": "NVIDIA",
+          "weight": 0.05
+        },
+        {
+          "ticker": "AAPL",
+          "name": "Apple",
+          "weight": 0.04
+        },
+        {
+          "ticker": "MSFT",
+          "name": "Microsoft",
+          "weight": 0.04
+        },
+        {
+          "ticker": "AMZN",
+          "name": "Amazon",
+          "weight": 0.03
+        },
+        {
+          "ticker": "GOOGL",
+          "name": "Alphabet A",
+          "weight": 0.02
+        },
+        {
+          "ticker": "META",
+          "name": "Meta",
+          "weight": 0.018
+        },
+        {
+          "ticker": "TSM",
+          "name": "TSMC",
+          "weight": 0.016
+        },
+        {
+          "ticker": "AVGO",
+          "name": "Broadcom",
+          "weight": 0.015
+        },
+        {
+          "ticker": "TSLA",
+          "name": "Tesla",
+          "weight": 0.014
+        },
+        {
+          "ticker": "BRK.B",
+          "name": "Berkshire B",
+          "weight": 0.013
+        },
+        {
+          "ticker": "JPM",
+          "name": "JPMorgan",
+          "weight": 0.012
+        }
       ],
       "countryWeightsAsOf": "2026-06 (approx, FTSE All-World)",
       "countryWeights": [
-        { "code": "US", "name": "United States", "weight": 0.620 },
-        { "code": "JP", "name": "Japan",         "weight": 0.055 },
-        { "code": "GB", "name": "United Kingdom","weight": 0.040 },
-        { "code": "CN", "name": "China",         "weight": 0.030 },
-        { "code": "CA", "name": "Canada",        "weight": 0.030 },
-        { "code": "FR", "name": "France",        "weight": 0.030 },
-        { "code": "CH", "name": "Switzerland",   "weight": 0.025 },
-        { "code": "DE", "name": "Germany",       "weight": 0.020 },
-        { "code": "IN", "name": "India",         "weight": 0.020 },
-        { "code": "TW", "name": "Taiwan",        "weight": 0.020 },
-        { "code": "AU", "name": "Australia",     "weight": 0.018 },
-        { "code": "KR", "name": "South Korea",   "weight": 0.015 },
-        { "code": "NL", "name": "Netherlands",   "weight": 0.012 },
-        { "code": "IT", "name": "Italy",         "weight": 0.008 },
-        { "code": "ES", "name": "Spain",         "weight": 0.007 },
-        { "code": "BR", "name": "Brazil",        "weight": 0.005 }
+        {
+          "code": "US",
+          "name": "United States",
+          "weight": 0.62
+        },
+        {
+          "code": "JP",
+          "name": "Japan",
+          "weight": 0.055
+        },
+        {
+          "code": "GB",
+          "name": "United Kingdom",
+          "weight": 0.04
+        },
+        {
+          "code": "CN",
+          "name": "China",
+          "weight": 0.03
+        },
+        {
+          "code": "CA",
+          "name": "Canada",
+          "weight": 0.03
+        },
+        {
+          "code": "FR",
+          "name": "France",
+          "weight": 0.03
+        },
+        {
+          "code": "CH",
+          "name": "Switzerland",
+          "weight": 0.025
+        },
+        {
+          "code": "DE",
+          "name": "Germany",
+          "weight": 0.02
+        },
+        {
+          "code": "IN",
+          "name": "India",
+          "weight": 0.02
+        },
+        {
+          "code": "TW",
+          "name": "Taiwan",
+          "weight": 0.02
+        },
+        {
+          "code": "AU",
+          "name": "Australia",
+          "weight": 0.018
+        },
+        {
+          "code": "KR",
+          "name": "South Korea",
+          "weight": 0.015
+        },
+        {
+          "code": "NL",
+          "name": "Netherlands",
+          "weight": 0.012
+        },
+        {
+          "code": "IT",
+          "name": "Italy",
+          "weight": 0.008
+        },
+        {
+          "code": "ES",
+          "name": "Spain",
+          "weight": 0.007
+        },
+        {
+          "code": "BR",
+          "name": "Brazil",
+          "weight": 0.005
+        }
       ],
       "industryWeightsAsOf": "2026-06 (approx, FTSE All-World GICS)",
       "industryWeights": [
-        { "industry": "Semiconductors",                       "sector": "Information Technology",     "weight": 0.060 },
-        { "industry": "Systems Software",                     "sector": "Information Technology",     "weight": 0.060 },
-        { "industry": "Tech Hardware, Storage & Peripherals", "sector": "Information Technology",     "weight": 0.050 },
-        { "industry": "Application Software",                 "sector": "Information Technology",     "weight": 0.020 },
-        { "industry": "IT Services",                          "sector": "Information Technology",     "weight": 0.020 },
-        { "industry": "Interactive Media & Services",         "sector": "Communication Services",     "weight": 0.040 },
-        { "industry": "Internet & Direct Marketing Retail",   "sector": "Consumer Discretionary",     "weight": 0.030 },
-        { "industry": "Diversified Banks",                    "sector": "Financials",                 "weight": 0.050 },
-        { "industry": "Investment Banking & Brokerage",       "sector": "Financials",                 "weight": 0.015 },
-        { "industry": "Multi-Sector Holdings",                "sector": "Financials",                 "weight": 0.015 },
-        { "industry": "Property & Casualty Insurance",        "sector": "Financials",                 "weight": 0.015 },
-        { "industry": "Life & Health Insurance",              "sector": "Financials",                 "weight": 0.010 },
-        { "industry": "Pharmaceuticals",                      "sector": "Health Care",                "weight": 0.040 },
-        { "industry": "Biotechnology",                        "sector": "Health Care",                "weight": 0.015 },
-        { "industry": "Health Care Equipment",                "sector": "Health Care",                "weight": 0.020 },
-        { "industry": "Managed Health Care",                  "sector": "Health Care",                "weight": 0.015 },
-        { "industry": "Automobile Manufacturers",             "sector": "Consumer Discretionary",     "weight": 0.020 },
-        { "industry": "Apparel & Luxury Goods",               "sector": "Consumer Discretionary",     "weight": 0.015 },
-        { "industry": "Restaurants",                          "sector": "Consumer Discretionary",     "weight": 0.010 },
-        { "industry": "Beverages",                            "sector": "Consumer Staples",           "weight": 0.020 },
-        { "industry": "Household Products",                   "sector": "Consumer Staples",           "weight": 0.015 },
-        { "industry": "Packaged Foods & Meats",               "sector": "Consumer Staples",           "weight": 0.015 },
-        { "industry": "Tobacco",                              "sector": "Consumer Staples",           "weight": 0.010 },
-        { "industry": "Aerospace & Defense",                  "sector": "Industrials",                "weight": 0.020 },
-        { "industry": "Industrial Machinery",                 "sector": "Industrials",                "weight": 0.020 },
-        { "industry": "Industrial Conglomerates",             "sector": "Industrials",                "weight": 0.010 },
-        { "industry": "Air Freight & Logistics",              "sector": "Industrials",                "weight": 0.010 },
-        { "industry": "Integrated Oil & Gas",                 "sector": "Energy",                     "weight": 0.020 },
-        { "industry": "Oil & Gas Exploration & Production",   "sector": "Energy",                     "weight": 0.010 },
-        { "industry": "Specialty Chemicals",                  "sector": "Materials",                  "weight": 0.015 },
-        { "industry": "Diversified Chemicals",                "sector": "Materials",                  "weight": 0.010 },
-        { "industry": "Metals & Mining",                      "sector": "Materials",                  "weight": 0.015 },
-        { "industry": "Diversified REITs",                    "sector": "Real Estate",                "weight": 0.015 },
-        { "industry": "Specialized REITs",                    "sector": "Real Estate",                "weight": 0.015 },
-        { "industry": "Electric Utilities",                   "sector": "Utilities",                  "weight": 0.020 },
-        { "industry": "Multi-Utilities",                      "sector": "Utilities",                  "weight": 0.010 },
-        { "industry": "Wireless Telecom Services",            "sector": "Communication Services",     "weight": 0.010 },
-        { "industry": "Communications Equipment",             "sector": "Information Technology",     "weight": 0.010 }
+        {
+          "industry": "Semiconductors",
+          "sector": "Information Technology",
+          "weight": 0.06
+        },
+        {
+          "industry": "Systems Software",
+          "sector": "Information Technology",
+          "weight": 0.06
+        },
+        {
+          "industry": "Tech Hardware, Storage & Peripherals",
+          "sector": "Information Technology",
+          "weight": 0.05
+        },
+        {
+          "industry": "Application Software",
+          "sector": "Information Technology",
+          "weight": 0.02
+        },
+        {
+          "industry": "IT Services",
+          "sector": "Information Technology",
+          "weight": 0.02
+        },
+        {
+          "industry": "Interactive Media & Services",
+          "sector": "Communication Services",
+          "weight": 0.04
+        },
+        {
+          "industry": "Internet & Direct Marketing Retail",
+          "sector": "Consumer Discretionary",
+          "weight": 0.03
+        },
+        {
+          "industry": "Diversified Banks",
+          "sector": "Financials",
+          "weight": 0.05
+        },
+        {
+          "industry": "Investment Banking & Brokerage",
+          "sector": "Financials",
+          "weight": 0.015
+        },
+        {
+          "industry": "Multi-Sector Holdings",
+          "sector": "Financials",
+          "weight": 0.015
+        },
+        {
+          "industry": "Property & Casualty Insurance",
+          "sector": "Financials",
+          "weight": 0.015
+        },
+        {
+          "industry": "Life & Health Insurance",
+          "sector": "Financials",
+          "weight": 0.01
+        },
+        {
+          "industry": "Pharmaceuticals",
+          "sector": "Health Care",
+          "weight": 0.04
+        },
+        {
+          "industry": "Biotechnology",
+          "sector": "Health Care",
+          "weight": 0.015
+        },
+        {
+          "industry": "Health Care Equipment",
+          "sector": "Health Care",
+          "weight": 0.02
+        },
+        {
+          "industry": "Managed Health Care",
+          "sector": "Health Care",
+          "weight": 0.015
+        },
+        {
+          "industry": "Automobile Manufacturers",
+          "sector": "Consumer Discretionary",
+          "weight": 0.02
+        },
+        {
+          "industry": "Apparel & Luxury Goods",
+          "sector": "Consumer Discretionary",
+          "weight": 0.015
+        },
+        {
+          "industry": "Restaurants",
+          "sector": "Consumer Discretionary",
+          "weight": 0.01
+        },
+        {
+          "industry": "Beverages",
+          "sector": "Consumer Staples",
+          "weight": 0.02
+        },
+        {
+          "industry": "Household Products",
+          "sector": "Consumer Staples",
+          "weight": 0.015
+        },
+        {
+          "industry": "Packaged Foods & Meats",
+          "sector": "Consumer Staples",
+          "weight": 0.015
+        },
+        {
+          "industry": "Tobacco",
+          "sector": "Consumer Staples",
+          "weight": 0.01
+        },
+        {
+          "industry": "Aerospace & Defense",
+          "sector": "Industrials",
+          "weight": 0.02
+        },
+        {
+          "industry": "Industrial Machinery",
+          "sector": "Industrials",
+          "weight": 0.02
+        },
+        {
+          "industry": "Industrial Conglomerates",
+          "sector": "Industrials",
+          "weight": 0.01
+        },
+        {
+          "industry": "Air Freight & Logistics",
+          "sector": "Industrials",
+          "weight": 0.01
+        },
+        {
+          "industry": "Integrated Oil & Gas",
+          "sector": "Energy",
+          "weight": 0.02
+        },
+        {
+          "industry": "Oil & Gas Exploration & Production",
+          "sector": "Energy",
+          "weight": 0.01
+        },
+        {
+          "industry": "Specialty Chemicals",
+          "sector": "Materials",
+          "weight": 0.015
+        },
+        {
+          "industry": "Diversified Chemicals",
+          "sector": "Materials",
+          "weight": 0.01
+        },
+        {
+          "industry": "Metals & Mining",
+          "sector": "Materials",
+          "weight": 0.015
+        },
+        {
+          "industry": "Diversified REITs",
+          "sector": "Real Estate",
+          "weight": 0.015
+        },
+        {
+          "industry": "Specialized REITs",
+          "sector": "Real Estate",
+          "weight": 0.015
+        },
+        {
+          "industry": "Electric Utilities",
+          "sector": "Utilities",
+          "weight": 0.02
+        },
+        {
+          "industry": "Multi-Utilities",
+          "sector": "Utilities",
+          "weight": 0.01
+        },
+        {
+          "industry": "Wireless Telecom Services",
+          "sector": "Communication Services",
+          "weight": 0.01
+        },
+        {
+          "industry": "Communications Equipment",
+          "sector": "Information Technology",
+          "weight": 0.01
+        }
       ],
       "themeWeightsAsOf": "2026-06 (estimated theme tagging, top names only)",
       "themeWeights": [
-        { "theme": "AI Infrastructure",        "weight": 0.075 },
-        { "theme": "AI Supporting (semi eq, networking, memory)", "weight": 0.030 },
-        { "theme": "Cloud Hyperscalers",       "weight": 0.090 },
-        { "theme": "SaaS / Application Software", "weight": 0.030 },
-        { "theme": "Cybersecurity",            "weight": 0.010 },
-        { "theme": "E-commerce / Internet Retail", "weight": 0.040 },
-        { "theme": "Social Media & Digital Ads", "weight": 0.045 },
-        { "theme": "Consumer Tech Hardware",   "weight": 0.050 },
-        { "theme": "Electric Vehicles & Mobility", "weight": 0.020 },
-        { "theme": "Robotics & Automation",    "weight": 0.005 },
-        { "theme": "Biotech & Drug Discovery", "weight": 0.045 },
-        { "theme": "GLP-1 / Obesity Drugs",    "weight": 0.020 },
-        { "theme": "Defense & Aerospace",      "weight": 0.020 },
-        { "theme": "Renewable / Clean Energy", "weight": 0.010 },
-        { "theme": "Luxury Consumer",          "weight": 0.015 },
-        { "theme": "Banks (legacy)",           "weight": 0.050 },
-        { "theme": "Big Oil & Fossil Fuels",   "weight": 0.025 },
-        { "theme": "REITs / Real Estate",      "weight": 0.020 }
+        {
+          "theme": "AI Infrastructure",
+          "weight": 0.075
+        },
+        {
+          "theme": "AI Supporting (semi eq, networking, memory)",
+          "weight": 0.03
+        },
+        {
+          "theme": "Cloud Hyperscalers",
+          "weight": 0.09
+        },
+        {
+          "theme": "SaaS / Application Software",
+          "weight": 0.03
+        },
+        {
+          "theme": "Cybersecurity",
+          "weight": 0.01
+        },
+        {
+          "theme": "E-commerce / Internet Retail",
+          "weight": 0.04
+        },
+        {
+          "theme": "Social Media & Digital Ads",
+          "weight": 0.045
+        },
+        {
+          "theme": "Consumer Tech Hardware",
+          "weight": 0.05
+        },
+        {
+          "theme": "Electric Vehicles & Mobility",
+          "weight": 0.02
+        },
+        {
+          "theme": "Robotics & Automation",
+          "weight": 0.005
+        },
+        {
+          "theme": "Biotech & Drug Discovery",
+          "weight": 0.045
+        },
+        {
+          "theme": "GLP-1 / Obesity Drugs",
+          "weight": 0.02
+        },
+        {
+          "theme": "Defense & Aerospace",
+          "weight": 0.02
+        },
+        {
+          "theme": "Renewable / Clean Energy",
+          "weight": 0.01
+        },
+        {
+          "theme": "Luxury Consumer",
+          "weight": 0.015
+        },
+        {
+          "theme": "Banks (legacy)",
+          "weight": 0.05
+        },
+        {
+          "theme": "Big Oil & Fossil Fuels",
+          "weight": 0.025
+        },
+        {
+          "theme": "REITs / Real Estate",
+          "weight": 0.02
+        }
       ]
     },
     {
@@ -147,11 +461,11 @@
       "wkn": "A0RPWH",
       "isin": "IE00B4L5Y983",
       "yahoo": "SWDA.L",
-      "ter": 0.0020,
+      "ter": 0.002,
       "sleeve": "core",
       "type": "ETF",
       "eur": 1491,
-      "weight": 0.07,
+      "weight": 0.0428,
       "thesis": "Legacy MSCI World position (~1,500 developed-market stocks). ~85% overlap with VWCE. Kept because rolling it into VWCE may trigger CGT.",
       "risk": [
         "Almost full overlap with VWCE — diversification benefit ≈ 0",
@@ -168,77 +482,308 @@
       },
       "topHoldingsAsOf": "2026-06 (approx, iShares MSCI World factsheet)",
       "topHoldings": [
-        { "ticker": "NVDA",  "name": "NVIDIA",      "weight": 0.055 },
-        { "ticker": "AAPL",  "name": "Apple",       "weight": 0.045 },
-        { "ticker": "MSFT",  "name": "Microsoft",   "weight": 0.045 },
-        { "ticker": "AMZN",  "name": "Amazon",      "weight": 0.033 },
-        { "ticker": "GOOGL", "name": "Alphabet A",  "weight": 0.022 },
-        { "ticker": "META",  "name": "Meta",        "weight": 0.020 },
-        { "ticker": "AVGO",  "name": "Broadcom",    "weight": 0.017 },
-        { "ticker": "TSLA",  "name": "Tesla",       "weight": 0.015 },
-        { "ticker": "BRK.B", "name": "Berkshire B", "weight": 0.014 },
-        { "ticker": "JPM",   "name": "JPMorgan",    "weight": 0.013 }
+        {
+          "ticker": "NVDA",
+          "name": "NVIDIA",
+          "weight": 0.055
+        },
+        {
+          "ticker": "AAPL",
+          "name": "Apple",
+          "weight": 0.045
+        },
+        {
+          "ticker": "MSFT",
+          "name": "Microsoft",
+          "weight": 0.045
+        },
+        {
+          "ticker": "AMZN",
+          "name": "Amazon",
+          "weight": 0.033
+        },
+        {
+          "ticker": "GOOGL",
+          "name": "Alphabet A",
+          "weight": 0.022
+        },
+        {
+          "ticker": "META",
+          "name": "Meta",
+          "weight": 0.02
+        },
+        {
+          "ticker": "AVGO",
+          "name": "Broadcom",
+          "weight": 0.017
+        },
+        {
+          "ticker": "TSLA",
+          "name": "Tesla",
+          "weight": 0.015
+        },
+        {
+          "ticker": "BRK.B",
+          "name": "Berkshire B",
+          "weight": 0.014
+        },
+        {
+          "ticker": "JPM",
+          "name": "JPMorgan",
+          "weight": 0.013
+        }
       ],
       "countryWeightsAsOf": "2026-06 (approx, MSCI World)",
       "countryWeights": [
-        { "code": "US", "name": "United States",   "weight": 0.700 },
-        { "code": "JP", "name": "Japan",           "weight": 0.060 },
-        { "code": "GB", "name": "United Kingdom",  "weight": 0.040 },
-        { "code": "CA", "name": "Canada",          "weight": 0.035 },
-        { "code": "FR", "name": "France",          "weight": 0.033 },
-        { "code": "CH", "name": "Switzerland",     "weight": 0.030 },
-        { "code": "DE", "name": "Germany",         "weight": 0.025 },
-        { "code": "AU", "name": "Australia",       "weight": 0.020 },
-        { "code": "NL", "name": "Netherlands",     "weight": 0.015 },
-        { "code": "SE", "name": "Sweden",          "weight": 0.010 }
+        {
+          "code": "US",
+          "name": "United States",
+          "weight": 0.7
+        },
+        {
+          "code": "JP",
+          "name": "Japan",
+          "weight": 0.06
+        },
+        {
+          "code": "GB",
+          "name": "United Kingdom",
+          "weight": 0.04
+        },
+        {
+          "code": "CA",
+          "name": "Canada",
+          "weight": 0.035
+        },
+        {
+          "code": "FR",
+          "name": "France",
+          "weight": 0.033
+        },
+        {
+          "code": "CH",
+          "name": "Switzerland",
+          "weight": 0.03
+        },
+        {
+          "code": "DE",
+          "name": "Germany",
+          "weight": 0.025
+        },
+        {
+          "code": "AU",
+          "name": "Australia",
+          "weight": 0.02
+        },
+        {
+          "code": "NL",
+          "name": "Netherlands",
+          "weight": 0.015
+        },
+        {
+          "code": "SE",
+          "name": "Sweden",
+          "weight": 0.01
+        }
       ],
       "industryWeightsAsOf": "2026-06 (approx, MSCI World GICS)",
       "industryWeights": [
-        { "industry": "Semiconductors",                       "sector": "Information Technology",     "weight": 0.065 },
-        { "industry": "Systems Software",                     "sector": "Information Technology",     "weight": 0.065 },
-        { "industry": "Tech Hardware, Storage & Peripherals", "sector": "Information Technology",     "weight": 0.055 },
-        { "industry": "Application Software",                 "sector": "Information Technology",     "weight": 0.025 },
-        { "industry": "IT Services",                          "sector": "Information Technology",     "weight": 0.020 },
-        { "industry": "Interactive Media & Services",         "sector": "Communication Services",     "weight": 0.045 },
-        { "industry": "Internet & Direct Marketing Retail",   "sector": "Consumer Discretionary",     "weight": 0.035 },
-        { "industry": "Diversified Banks",                    "sector": "Financials",                 "weight": 0.050 },
-        { "industry": "Investment Banking & Brokerage",       "sector": "Financials",                 "weight": 0.020 },
-        { "industry": "Multi-Sector Holdings",                "sector": "Financials",                 "weight": 0.018 },
-        { "industry": "Property & Casualty Insurance",        "sector": "Financials",                 "weight": 0.018 },
-        { "industry": "Pharmaceuticals",                      "sector": "Health Care",                "weight": 0.050 },
-        { "industry": "Biotechnology",                        "sector": "Health Care",                "weight": 0.015 },
-        { "industry": "Health Care Equipment",                "sector": "Health Care",                "weight": 0.025 },
-        { "industry": "Managed Health Care",                  "sector": "Health Care",                "weight": 0.020 },
-        { "industry": "Automobile Manufacturers",             "sector": "Consumer Discretionary",     "weight": 0.015 },
-        { "industry": "Apparel & Luxury Goods",               "sector": "Consumer Discretionary",     "weight": 0.015 },
-        { "industry": "Beverages",                            "sector": "Consumer Staples",           "weight": 0.020 },
-        { "industry": "Household Products",                   "sector": "Consumer Staples",           "weight": 0.015 },
-        { "industry": "Aerospace & Defense",                  "sector": "Industrials",                "weight": 0.025 },
-        { "industry": "Industrial Machinery",                 "sector": "Industrials",                "weight": 0.020 },
-        { "industry": "Integrated Oil & Gas",                 "sector": "Energy",                     "weight": 0.020 },
-        { "industry": "Specialty Chemicals",                  "sector": "Materials",                  "weight": 0.015 },
-        { "industry": "Specialized REITs",                    "sector": "Real Estate",                "weight": 0.020 },
-        { "industry": "Electric Utilities",                   "sector": "Utilities",                  "weight": 0.020 }
+        {
+          "industry": "Semiconductors",
+          "sector": "Information Technology",
+          "weight": 0.065
+        },
+        {
+          "industry": "Systems Software",
+          "sector": "Information Technology",
+          "weight": 0.065
+        },
+        {
+          "industry": "Tech Hardware, Storage & Peripherals",
+          "sector": "Information Technology",
+          "weight": 0.055
+        },
+        {
+          "industry": "Application Software",
+          "sector": "Information Technology",
+          "weight": 0.025
+        },
+        {
+          "industry": "IT Services",
+          "sector": "Information Technology",
+          "weight": 0.02
+        },
+        {
+          "industry": "Interactive Media & Services",
+          "sector": "Communication Services",
+          "weight": 0.045
+        },
+        {
+          "industry": "Internet & Direct Marketing Retail",
+          "sector": "Consumer Discretionary",
+          "weight": 0.035
+        },
+        {
+          "industry": "Diversified Banks",
+          "sector": "Financials",
+          "weight": 0.05
+        },
+        {
+          "industry": "Investment Banking & Brokerage",
+          "sector": "Financials",
+          "weight": 0.02
+        },
+        {
+          "industry": "Multi-Sector Holdings",
+          "sector": "Financials",
+          "weight": 0.018
+        },
+        {
+          "industry": "Property & Casualty Insurance",
+          "sector": "Financials",
+          "weight": 0.018
+        },
+        {
+          "industry": "Pharmaceuticals",
+          "sector": "Health Care",
+          "weight": 0.05
+        },
+        {
+          "industry": "Biotechnology",
+          "sector": "Health Care",
+          "weight": 0.015
+        },
+        {
+          "industry": "Health Care Equipment",
+          "sector": "Health Care",
+          "weight": 0.025
+        },
+        {
+          "industry": "Managed Health Care",
+          "sector": "Health Care",
+          "weight": 0.02
+        },
+        {
+          "industry": "Automobile Manufacturers",
+          "sector": "Consumer Discretionary",
+          "weight": 0.015
+        },
+        {
+          "industry": "Apparel & Luxury Goods",
+          "sector": "Consumer Discretionary",
+          "weight": 0.015
+        },
+        {
+          "industry": "Beverages",
+          "sector": "Consumer Staples",
+          "weight": 0.02
+        },
+        {
+          "industry": "Household Products",
+          "sector": "Consumer Staples",
+          "weight": 0.015
+        },
+        {
+          "industry": "Aerospace & Defense",
+          "sector": "Industrials",
+          "weight": 0.025
+        },
+        {
+          "industry": "Industrial Machinery",
+          "sector": "Industrials",
+          "weight": 0.02
+        },
+        {
+          "industry": "Integrated Oil & Gas",
+          "sector": "Energy",
+          "weight": 0.02
+        },
+        {
+          "industry": "Specialty Chemicals",
+          "sector": "Materials",
+          "weight": 0.015
+        },
+        {
+          "industry": "Specialized REITs",
+          "sector": "Real Estate",
+          "weight": 0.02
+        },
+        {
+          "industry": "Electric Utilities",
+          "sector": "Utilities",
+          "weight": 0.02
+        }
       ],
       "themeWeightsAsOf": "2026-06 (estimated theme tagging, top names only)",
       "themeWeights": [
-        { "theme": "AI Infrastructure",        "weight": 0.080 },
-        { "theme": "AI Supporting (semi eq, networking, memory)", "weight": 0.035 },
-        { "theme": "Cloud Hyperscalers",       "weight": 0.100 },
-        { "theme": "SaaS / Application Software", "weight": 0.035 },
-        { "theme": "Cybersecurity",            "weight": 0.012 },
-        { "theme": "E-commerce / Internet Retail", "weight": 0.045 },
-        { "theme": "Social Media & Digital Ads", "weight": 0.050 },
-        { "theme": "Consumer Tech Hardware",   "weight": 0.055 },
-        { "theme": "Electric Vehicles & Mobility", "weight": 0.020 },
-        { "theme": "Robotics & Automation",    "weight": 0.005 },
-        { "theme": "Biotech & Drug Discovery", "weight": 0.055 },
-        { "theme": "GLP-1 / Obesity Drugs",    "weight": 0.025 },
-        { "theme": "Defense & Aerospace",      "weight": 0.025 },
-        { "theme": "Luxury Consumer",          "weight": 0.015 },
-        { "theme": "Banks (legacy)",           "weight": 0.050 },
-        { "theme": "Big Oil & Fossil Fuels",   "weight": 0.025 },
-        { "theme": "REITs / Real Estate",      "weight": 0.020 }
+        {
+          "theme": "AI Infrastructure",
+          "weight": 0.08
+        },
+        {
+          "theme": "AI Supporting (semi eq, networking, memory)",
+          "weight": 0.035
+        },
+        {
+          "theme": "Cloud Hyperscalers",
+          "weight": 0.1
+        },
+        {
+          "theme": "SaaS / Application Software",
+          "weight": 0.035
+        },
+        {
+          "theme": "Cybersecurity",
+          "weight": 0.012
+        },
+        {
+          "theme": "E-commerce / Internet Retail",
+          "weight": 0.045
+        },
+        {
+          "theme": "Social Media & Digital Ads",
+          "weight": 0.05
+        },
+        {
+          "theme": "Consumer Tech Hardware",
+          "weight": 0.055
+        },
+        {
+          "theme": "Electric Vehicles & Mobility",
+          "weight": 0.02
+        },
+        {
+          "theme": "Robotics & Automation",
+          "weight": 0.005
+        },
+        {
+          "theme": "Biotech & Drug Discovery",
+          "weight": 0.055
+        },
+        {
+          "theme": "GLP-1 / Obesity Drugs",
+          "weight": 0.025
+        },
+        {
+          "theme": "Defense & Aerospace",
+          "weight": 0.025
+        },
+        {
+          "theme": "Luxury Consumer",
+          "weight": 0.015
+        },
+        {
+          "theme": "Banks (legacy)",
+          "weight": 0.05
+        },
+        {
+          "theme": "Big Oil & Fossil Fuels",
+          "weight": 0.025
+        },
+        {
+          "theme": "REITs / Real Estate",
+          "weight": 0.02
+        }
       ]
     },
     {
@@ -252,7 +797,7 @@
       "sleeve": "tech",
       "type": "Active Fund",
       "eur": 3195,
-      "weight": 0.15,
+      "weight": 0.0916,
       "thesis": "Active concentrated bet on next-gen tech (semis, AI infra, cyber, FinTech). Manager-picked, ~40-60 names, higher conviction than passive tech ETF.",
       "risk": [
         "Sector-concentrated active fund: 45-55% drawdowns possible in tech/AI crash",
@@ -270,52 +815,191 @@
       },
       "topHoldingsAsOf": "2026-06 (estimated, BGF Next Gen Tech monthly report)",
       "topHoldings": [
-        { "ticker": "NVDA", "name": "NVIDIA",                  "weight": 0.070 },
-        { "ticker": "AVGO", "name": "Broadcom",                "weight": 0.055 },
-        { "ticker": "TSM",  "name": "TSMC",                    "weight": 0.050 },
-        { "ticker": "ASML", "name": "ASML",                    "weight": 0.045 },
-        { "ticker": "MRVL", "name": "Marvell Technology",      "weight": 0.040 },
-        { "ticker": "KLAC", "name": "KLA Corp",                "weight": 0.038 },
-        { "ticker": "AMD",  "name": "AMD",                     "weight": 0.035 },
-        { "ticker": "ANET", "name": "Arista Networks",         "weight": 0.032 },
-        { "ticker": "LRCX", "name": "Lam Research",            "weight": 0.030 },
-        { "ticker": "MU",   "name": "Micron Technology",       "weight": 0.028 }
+        {
+          "ticker": "NVDA",
+          "name": "NVIDIA",
+          "weight": 0.07
+        },
+        {
+          "ticker": "AVGO",
+          "name": "Broadcom",
+          "weight": 0.055
+        },
+        {
+          "ticker": "TSM",
+          "name": "TSMC",
+          "weight": 0.05
+        },
+        {
+          "ticker": "ASML",
+          "name": "ASML",
+          "weight": 0.045
+        },
+        {
+          "ticker": "MRVL",
+          "name": "Marvell Technology",
+          "weight": 0.04
+        },
+        {
+          "ticker": "KLAC",
+          "name": "KLA Corp",
+          "weight": 0.038
+        },
+        {
+          "ticker": "AMD",
+          "name": "AMD",
+          "weight": 0.035
+        },
+        {
+          "ticker": "ANET",
+          "name": "Arista Networks",
+          "weight": 0.032
+        },
+        {
+          "ticker": "LRCX",
+          "name": "Lam Research",
+          "weight": 0.03
+        },
+        {
+          "ticker": "MU",
+          "name": "Micron Technology",
+          "weight": 0.028
+        }
       ],
       "countryWeightsAsOf": "2026-06 (estimated, BGF Next Gen Tech monthly report)",
       "countryWeights": [
-        { "code": "US", "name": "United States",   "weight": 0.700 },
-        { "code": "TW", "name": "Taiwan",          "weight": 0.070 },
-        { "code": "NL", "name": "Netherlands",     "weight": 0.050 },
-        { "code": "KR", "name": "South Korea",     "weight": 0.030 },
-        { "code": "JP", "name": "Japan",           "weight": 0.030 },
-        { "code": "IL", "name": "Israel",          "weight": 0.020 },
-        { "code": "CN", "name": "China",           "weight": 0.020 },
-        { "code": "GB", "name": "United Kingdom",  "weight": 0.015 }
+        {
+          "code": "US",
+          "name": "United States",
+          "weight": 0.7
+        },
+        {
+          "code": "TW",
+          "name": "Taiwan",
+          "weight": 0.07
+        },
+        {
+          "code": "NL",
+          "name": "Netherlands",
+          "weight": 0.05
+        },
+        {
+          "code": "KR",
+          "name": "South Korea",
+          "weight": 0.03
+        },
+        {
+          "code": "JP",
+          "name": "Japan",
+          "weight": 0.03
+        },
+        {
+          "code": "IL",
+          "name": "Israel",
+          "weight": 0.02
+        },
+        {
+          "code": "CN",
+          "name": "China",
+          "weight": 0.02
+        },
+        {
+          "code": "GB",
+          "name": "United Kingdom",
+          "weight": 0.015
+        }
       ],
       "industryWeightsAsOf": "2026-06 (estimated, BGF Next Gen Tech sleeve)",
       "industryWeights": [
-        { "industry": "Semiconductors",                       "sector": "Information Technology",     "weight": 0.420 },
-        { "industry": "Semiconductor Materials & Equipment",  "sector": "Information Technology",     "weight": 0.150 },
-        { "industry": "Systems Software",                     "sector": "Information Technology",     "weight": 0.090 },
-        { "industry": "Application Software",                 "sector": "Information Technology",     "weight": 0.060 },
-        { "industry": "Communications Equipment",             "sector": "Information Technology",     "weight": 0.060 },
-        { "industry": "IT Services",                          "sector": "Information Technology",     "weight": 0.050 },
-        { "industry": "Internet & Direct Marketing Retail",   "sector": "Consumer Discretionary",     "weight": 0.030 },
-        { "industry": "Tech Hardware, Storage & Peripherals", "sector": "Information Technology",     "weight": 0.030 },
-        { "industry": "Electronic Components",                "sector": "Information Technology",     "weight": 0.030 },
-        { "industry": "Interactive Media & Services",         "sector": "Communication Services",     "weight": 0.030 }
+        {
+          "industry": "Semiconductors",
+          "sector": "Information Technology",
+          "weight": 0.42
+        },
+        {
+          "industry": "Semiconductor Materials & Equipment",
+          "sector": "Information Technology",
+          "weight": 0.15
+        },
+        {
+          "industry": "Systems Software",
+          "sector": "Information Technology",
+          "weight": 0.09
+        },
+        {
+          "industry": "Application Software",
+          "sector": "Information Technology",
+          "weight": 0.06
+        },
+        {
+          "industry": "Communications Equipment",
+          "sector": "Information Technology",
+          "weight": 0.06
+        },
+        {
+          "industry": "IT Services",
+          "sector": "Information Technology",
+          "weight": 0.05
+        },
+        {
+          "industry": "Internet & Direct Marketing Retail",
+          "sector": "Consumer Discretionary",
+          "weight": 0.03
+        },
+        {
+          "industry": "Tech Hardware, Storage & Peripherals",
+          "sector": "Information Technology",
+          "weight": 0.03
+        },
+        {
+          "industry": "Electronic Components",
+          "sector": "Information Technology",
+          "weight": 0.03
+        },
+        {
+          "industry": "Interactive Media & Services",
+          "sector": "Communication Services",
+          "weight": 0.03
+        }
       ],
       "themeWeightsAsOf": "2026-06 (estimated, BGF Next Gen Tech is purpose-built thematic)",
       "themeWeights": [
-        { "theme": "AI Infrastructure",        "weight": 0.420 },
-        { "theme": "AI Supporting (semi eq, networking, memory)", "weight": 0.250 },
-        { "theme": "Cybersecurity",            "weight": 0.060 },
-        { "theme": "SaaS / Application Software", "weight": 0.060 },
-        { "theme": "Cloud Hyperscalers",       "weight": 0.040 },
-        { "theme": "Robotics & Automation",    "weight": 0.040 },
-        { "theme": "Electric Vehicles & Mobility", "weight": 0.020 },
-        { "theme": "Quantum / Next-gen Compute", "weight": 0.030 },
-        { "theme": "E-commerce / Internet Retail", "weight": 0.030 }
+        {
+          "theme": "AI Infrastructure",
+          "weight": 0.42
+        },
+        {
+          "theme": "AI Supporting (semi eq, networking, memory)",
+          "weight": 0.25
+        },
+        {
+          "theme": "Cybersecurity",
+          "weight": 0.06
+        },
+        {
+          "theme": "SaaS / Application Software",
+          "weight": 0.06
+        },
+        {
+          "theme": "Cloud Hyperscalers",
+          "weight": 0.04
+        },
+        {
+          "theme": "Robotics & Automation",
+          "weight": 0.04
+        },
+        {
+          "theme": "Electric Vehicles & Mobility",
+          "weight": 0.02
+        },
+        {
+          "theme": "Quantum / Next-gen Compute",
+          "weight": 0.03
+        },
+        {
+          "theme": "E-commerce / Internet Retail",
+          "weight": 0.03
+        }
       ]
     },
     {
@@ -329,7 +1013,7 @@
       "sleeve": "dividend",
       "type": "ETF",
       "eur": 2130,
-      "weight": 0.10,
+      "weight": 0.0611,
       "thesis": "Concentrated 100-name developed-markets dividend sleeve, Morningstar Dividend Yield Focus index. Yield ~4-5%, value/old-economy tilt — diversifier vs growth-heavy core.",
       "risk": [
         "Distributing — quarterly dividends taxed as income in DE (Abgeltungsteuer 25%+soli), not deferred",
@@ -347,57 +1031,217 @@
       },
       "topHoldingsAsOf": "2026-06 (approx, Morningstar Dividend Yield Focus index)",
       "topHoldings": [
-        { "ticker": "XOM",   "name": "ExxonMobil",          "weight": 0.060 },
-        { "ticker": "JPM",   "name": "JPMorgan Chase",      "weight": 0.050 },
-        { "ticker": "VZ",    "name": "Verizon",             "weight": 0.045 },
-        { "ticker": "CVX",   "name": "Chevron",             "weight": 0.040 },
-        { "ticker": "PFE",   "name": "Pfizer",              "weight": 0.035 },
-        { "ticker": "PM",    "name": "Philip Morris",       "weight": 0.030 },
-        { "ticker": "IBM",   "name": "IBM",                 "weight": 0.030 },
-        { "ticker": "T",     "name": "AT&T",                "weight": 0.028 },
-        { "ticker": "COP",   "name": "ConocoPhillips",      "weight": 0.025 },
-        { "ticker": "BHP",   "name": "BHP Group",           "weight": 0.022 }
+        {
+          "ticker": "XOM",
+          "name": "ExxonMobil",
+          "weight": 0.06
+        },
+        {
+          "ticker": "JPM",
+          "name": "JPMorgan Chase",
+          "weight": 0.05
+        },
+        {
+          "ticker": "VZ",
+          "name": "Verizon",
+          "weight": 0.045
+        },
+        {
+          "ticker": "CVX",
+          "name": "Chevron",
+          "weight": 0.04
+        },
+        {
+          "ticker": "PFE",
+          "name": "Pfizer",
+          "weight": 0.035
+        },
+        {
+          "ticker": "PM",
+          "name": "Philip Morris",
+          "weight": 0.03
+        },
+        {
+          "ticker": "IBM",
+          "name": "IBM",
+          "weight": 0.03
+        },
+        {
+          "ticker": "T",
+          "name": "AT&T",
+          "weight": 0.028
+        },
+        {
+          "ticker": "COP",
+          "name": "ConocoPhillips",
+          "weight": 0.025
+        },
+        {
+          "ticker": "BHP",
+          "name": "BHP Group",
+          "weight": 0.022
+        }
       ],
       "countryWeightsAsOf": "2026-06 (approx, VanEck factsheet)",
       "countryWeights": [
-        { "code": "US", "name": "United States",   "weight": 0.500 },
-        { "code": "GB", "name": "United Kingdom",  "weight": 0.100 },
-        { "code": "AU", "name": "Australia",       "weight": 0.080 },
-        { "code": "FR", "name": "France",          "weight": 0.060 },
-        { "code": "JP", "name": "Japan",           "weight": 0.055 },
-        { "code": "CH", "name": "Switzerland",     "weight": 0.050 },
-        { "code": "CA", "name": "Canada",          "weight": 0.045 },
-        { "code": "DE", "name": "Germany",         "weight": 0.040 },
-        { "code": "NL", "name": "Netherlands",     "weight": 0.025 },
-        { "code": "ES", "name": "Spain",           "weight": 0.020 },
-        { "code": "IT", "name": "Italy",           "weight": 0.015 }
+        {
+          "code": "US",
+          "name": "United States",
+          "weight": 0.5
+        },
+        {
+          "code": "GB",
+          "name": "United Kingdom",
+          "weight": 0.1
+        },
+        {
+          "code": "AU",
+          "name": "Australia",
+          "weight": 0.08
+        },
+        {
+          "code": "FR",
+          "name": "France",
+          "weight": 0.06
+        },
+        {
+          "code": "JP",
+          "name": "Japan",
+          "weight": 0.055
+        },
+        {
+          "code": "CH",
+          "name": "Switzerland",
+          "weight": 0.05
+        },
+        {
+          "code": "CA",
+          "name": "Canada",
+          "weight": 0.045
+        },
+        {
+          "code": "DE",
+          "name": "Germany",
+          "weight": 0.04
+        },
+        {
+          "code": "NL",
+          "name": "Netherlands",
+          "weight": 0.025
+        },
+        {
+          "code": "ES",
+          "name": "Spain",
+          "weight": 0.02
+        },
+        {
+          "code": "IT",
+          "name": "Italy",
+          "weight": 0.015
+        }
       ],
       "industryWeightsAsOf": "2026-06 (approx, Morningstar DM Div Leaders)",
       "industryWeights": [
-        { "industry": "Integrated Oil & Gas",                 "sector": "Energy",                     "weight": 0.180 },
-        { "industry": "Oil & Gas Exploration & Production",   "sector": "Energy",                     "weight": 0.060 },
-        { "industry": "Diversified Banks",                    "sector": "Financials",                 "weight": 0.150 },
-        { "industry": "Multi-Sector Holdings",                "sector": "Financials",                 "weight": 0.040 },
-        { "industry": "Pharmaceuticals",                      "sector": "Health Care",                "weight": 0.110 },
-        { "industry": "Tobacco",                              "sector": "Consumer Staples",           "weight": 0.060 },
-        { "industry": "Packaged Foods & Meats",               "sector": "Consumer Staples",           "weight": 0.030 },
-        { "industry": "Wireless Telecom Services",            "sector": "Communication Services",     "weight": 0.090 },
-        { "industry": "IT Services",                          "sector": "Information Technology",     "weight": 0.035 },
-        { "industry": "Electric Utilities",                   "sector": "Utilities",                  "weight": 0.060 },
-        { "industry": "Metals & Mining",                      "sector": "Materials",                  "weight": 0.045 },
-        { "industry": "Industrial Conglomerates",             "sector": "Industrials",                "weight": 0.030 },
-        { "industry": "Specialized REITs",                    "sector": "Real Estate",                "weight": 0.020 }
+        {
+          "industry": "Integrated Oil & Gas",
+          "sector": "Energy",
+          "weight": 0.18
+        },
+        {
+          "industry": "Oil & Gas Exploration & Production",
+          "sector": "Energy",
+          "weight": 0.06
+        },
+        {
+          "industry": "Diversified Banks",
+          "sector": "Financials",
+          "weight": 0.15
+        },
+        {
+          "industry": "Multi-Sector Holdings",
+          "sector": "Financials",
+          "weight": 0.04
+        },
+        {
+          "industry": "Pharmaceuticals",
+          "sector": "Health Care",
+          "weight": 0.11
+        },
+        {
+          "industry": "Tobacco",
+          "sector": "Consumer Staples",
+          "weight": 0.06
+        },
+        {
+          "industry": "Packaged Foods & Meats",
+          "sector": "Consumer Staples",
+          "weight": 0.03
+        },
+        {
+          "industry": "Wireless Telecom Services",
+          "sector": "Communication Services",
+          "weight": 0.09
+        },
+        {
+          "industry": "IT Services",
+          "sector": "Information Technology",
+          "weight": 0.035
+        },
+        {
+          "industry": "Electric Utilities",
+          "sector": "Utilities",
+          "weight": 0.06
+        },
+        {
+          "industry": "Metals & Mining",
+          "sector": "Materials",
+          "weight": 0.045
+        },
+        {
+          "industry": "Industrial Conglomerates",
+          "sector": "Industrials",
+          "weight": 0.03
+        },
+        {
+          "industry": "Specialized REITs",
+          "sector": "Real Estate",
+          "weight": 0.02
+        }
       ],
       "themeWeightsAsOf": "2026-06 (estimated, dividend-yield-focused composition)",
       "themeWeights": [
-        { "theme": "Big Oil & Fossil Fuels",   "weight": 0.240 },
-        { "theme": "Banks (legacy)",           "weight": 0.190 },
-        { "theme": "Biotech & Drug Discovery", "weight": 0.110 },
-        { "theme": "Telecom Legacy",           "weight": 0.090 },
-        { "theme": "Consumer Staples Defensives", "weight": 0.090 },
-        { "theme": "Utilities Defensives",     "weight": 0.060 },
-        { "theme": "Tobacco",                  "weight": 0.060 },
-        { "theme": "REITs / Real Estate",      "weight": 0.020 }
+        {
+          "theme": "Big Oil & Fossil Fuels",
+          "weight": 0.24
+        },
+        {
+          "theme": "Banks (legacy)",
+          "weight": 0.19
+        },
+        {
+          "theme": "Biotech & Drug Discovery",
+          "weight": 0.11
+        },
+        {
+          "theme": "Telecom Legacy",
+          "weight": 0.09
+        },
+        {
+          "theme": "Consumer Staples Defensives",
+          "weight": 0.09
+        },
+        {
+          "theme": "Utilities Defensives",
+          "weight": 0.06
+        },
+        {
+          "theme": "Tobacco",
+          "weight": 0.06
+        },
+        {
+          "theme": "REITs / Real Estate",
+          "weight": 0.02
+        }
       ]
     },
     {
@@ -411,7 +1255,7 @@
       "sleeve": "em",
       "type": "ETF",
       "eur": 2130,
-      "weight": 0.10,
+      "weight": 0.0611,
       "thesis": "Cheap active-ish EM exposure (0.35% TER). MSCI EM benchmark with small over/underweights from JPM research — index-hugger with light alpha attempt.",
       "risk": [
         "Tracks MSCI EM tightly → still ~30% China, ~20% Taiwan/Korea tech concentration",
@@ -429,64 +1273,250 @@
       },
       "topHoldingsAsOf": "2026-06 (estimated, JPM EM sleeve composition)",
       "topHoldings": [
-        { "ticker": "TSM",       "name": "TSMC",                       "weight": 0.070 },
-        { "ticker": "0700.HK",   "name": "Tencent",                    "weight": 0.050 },
-        { "ticker": "005930.KS", "name": "Samsung Electronics",        "weight": 0.040 },
-        { "ticker": "BABA",      "name": "Alibaba",                    "weight": 0.035 },
-        { "ticker": "HDFCBANK",  "name": "HDFC Bank",                  "weight": 0.025 },
-        { "ticker": "ICICIBANK", "name": "ICICI Bank",                 "weight": 0.020 },
-        { "ticker": "RELIANCE",  "name": "Reliance Industries",        "weight": 0.020 },
-        { "ticker": "2454.TW",   "name": "MediaTek",                   "weight": 0.018 },
-        { "ticker": "601939.SS", "name": "China Construction Bank",    "weight": 0.015 },
-        { "ticker": "NPN.JO",    "name": "Naspers",                    "weight": 0.013 }
+        {
+          "ticker": "TSM",
+          "name": "TSMC",
+          "weight": 0.07
+        },
+        {
+          "ticker": "0700.HK",
+          "name": "Tencent",
+          "weight": 0.05
+        },
+        {
+          "ticker": "005930.KS",
+          "name": "Samsung Electronics",
+          "weight": 0.04
+        },
+        {
+          "ticker": "BABA",
+          "name": "Alibaba",
+          "weight": 0.035
+        },
+        {
+          "ticker": "HDFCBANK",
+          "name": "HDFC Bank",
+          "weight": 0.025
+        },
+        {
+          "ticker": "ICICIBANK",
+          "name": "ICICI Bank",
+          "weight": 0.02
+        },
+        {
+          "ticker": "RELIANCE",
+          "name": "Reliance Industries",
+          "weight": 0.02
+        },
+        {
+          "ticker": "2454.TW",
+          "name": "MediaTek",
+          "weight": 0.018
+        },
+        {
+          "ticker": "601939.SS",
+          "name": "China Construction Bank",
+          "weight": 0.015
+        },
+        {
+          "ticker": "NPN.JO",
+          "name": "Naspers",
+          "weight": 0.013
+        }
       ],
       "countryWeightsAsOf": "2026-06 (estimated, JPM EM sleeve)",
       "countryWeights": [
-        { "code": "CN", "name": "China",          "weight": 0.280 },
-        { "code": "IN", "name": "India",          "weight": 0.220 },
-        { "code": "TW", "name": "Taiwan",         "weight": 0.170 },
-        { "code": "KR", "name": "South Korea",    "weight": 0.120 },
-        { "code": "BR", "name": "Brazil",         "weight": 0.050 },
-        { "code": "SA", "name": "Saudi Arabia",   "weight": 0.040 },
-        { "code": "ZA", "name": "South Africa",   "weight": 0.030 },
-        { "code": "MX", "name": "Mexico",         "weight": 0.025 },
-        { "code": "ID", "name": "Indonesia",      "weight": 0.020 },
-        { "code": "AE", "name": "UAE",            "weight": 0.015 },
-        { "code": "PL", "name": "Poland",         "weight": 0.010 }
+        {
+          "code": "CN",
+          "name": "China",
+          "weight": 0.28
+        },
+        {
+          "code": "IN",
+          "name": "India",
+          "weight": 0.22
+        },
+        {
+          "code": "TW",
+          "name": "Taiwan",
+          "weight": 0.17
+        },
+        {
+          "code": "KR",
+          "name": "South Korea",
+          "weight": 0.12
+        },
+        {
+          "code": "BR",
+          "name": "Brazil",
+          "weight": 0.05
+        },
+        {
+          "code": "SA",
+          "name": "Saudi Arabia",
+          "weight": 0.04
+        },
+        {
+          "code": "ZA",
+          "name": "South Africa",
+          "weight": 0.03
+        },
+        {
+          "code": "MX",
+          "name": "Mexico",
+          "weight": 0.025
+        },
+        {
+          "code": "ID",
+          "name": "Indonesia",
+          "weight": 0.02
+        },
+        {
+          "code": "AE",
+          "name": "UAE",
+          "weight": 0.015
+        },
+        {
+          "code": "PL",
+          "name": "Poland",
+          "weight": 0.01
+        }
       ],
       "industryWeightsAsOf": "2026-06 (estimated, JPM EM sleeve)",
       "industryWeights": [
-        { "industry": "Semiconductors",                       "sector": "Information Technology",     "weight": 0.150 },
-        { "industry": "Diversified Banks",                    "sector": "Financials",                 "weight": 0.120 },
-        { "industry": "Interactive Media & Services",         "sector": "Communication Services",     "weight": 0.080 },
-        { "industry": "Internet & Direct Marketing Retail",   "sector": "Consumer Discretionary",     "weight": 0.050 },
-        { "industry": "Integrated Oil & Gas",                 "sector": "Energy",                     "weight": 0.040 },
-        { "industry": "Tech Hardware, Storage & Peripherals", "sector": "Information Technology",     "weight": 0.035 },
-        { "industry": "Automobile Manufacturers",             "sector": "Consumer Discretionary",     "weight": 0.030 },
-        { "industry": "Pharmaceuticals",                      "sector": "Health Care",                "weight": 0.025 },
-        { "industry": "Diversified Metals & Mining",          "sector": "Materials",                  "weight": 0.025 },
-        { "industry": "Wireless Telecom Services",            "sector": "Communication Services",     "weight": 0.025 },
-        { "industry": "Property & Casualty Insurance",        "sector": "Financials",                 "weight": 0.020 },
-        { "industry": "Diversified REITs",                    "sector": "Real Estate",                "weight": 0.020 },
-        { "industry": "Steel",                                "sector": "Materials",                  "weight": 0.015 },
-        { "industry": "Restaurants",                          "sector": "Consumer Discretionary",     "weight": 0.015 },
-        { "industry": "Electric Utilities",                   "sector": "Utilities",                  "weight": 0.015 },
-        { "industry": "Construction & Engineering",           "sector": "Industrials",                "weight": 0.015 },
-        { "industry": "Food Products",                        "sector": "Consumer Staples",           "weight": 0.015 },
-        { "industry": "Aerospace & Defense",                  "sector": "Industrials",                "weight": 0.010 }
+        {
+          "industry": "Semiconductors",
+          "sector": "Information Technology",
+          "weight": 0.15
+        },
+        {
+          "industry": "Diversified Banks",
+          "sector": "Financials",
+          "weight": 0.12
+        },
+        {
+          "industry": "Interactive Media & Services",
+          "sector": "Communication Services",
+          "weight": 0.08
+        },
+        {
+          "industry": "Internet & Direct Marketing Retail",
+          "sector": "Consumer Discretionary",
+          "weight": 0.05
+        },
+        {
+          "industry": "Integrated Oil & Gas",
+          "sector": "Energy",
+          "weight": 0.04
+        },
+        {
+          "industry": "Tech Hardware, Storage & Peripherals",
+          "sector": "Information Technology",
+          "weight": 0.035
+        },
+        {
+          "industry": "Automobile Manufacturers",
+          "sector": "Consumer Discretionary",
+          "weight": 0.03
+        },
+        {
+          "industry": "Pharmaceuticals",
+          "sector": "Health Care",
+          "weight": 0.025
+        },
+        {
+          "industry": "Diversified Metals & Mining",
+          "sector": "Materials",
+          "weight": 0.025
+        },
+        {
+          "industry": "Wireless Telecom Services",
+          "sector": "Communication Services",
+          "weight": 0.025
+        },
+        {
+          "industry": "Property & Casualty Insurance",
+          "sector": "Financials",
+          "weight": 0.02
+        },
+        {
+          "industry": "Diversified REITs",
+          "sector": "Real Estate",
+          "weight": 0.02
+        },
+        {
+          "industry": "Steel",
+          "sector": "Materials",
+          "weight": 0.015
+        },
+        {
+          "industry": "Restaurants",
+          "sector": "Consumer Discretionary",
+          "weight": 0.015
+        },
+        {
+          "industry": "Electric Utilities",
+          "sector": "Utilities",
+          "weight": 0.015
+        },
+        {
+          "industry": "Construction & Engineering",
+          "sector": "Industrials",
+          "weight": 0.015
+        },
+        {
+          "industry": "Food Products",
+          "sector": "Consumer Staples",
+          "weight": 0.015
+        },
+        {
+          "industry": "Aerospace & Defense",
+          "sector": "Industrials",
+          "weight": 0.01
+        }
       ],
       "themeWeightsAsOf": "2026-06 (estimated, JPM EM sleeve)",
       "themeWeights": [
-        { "theme": "AI Infrastructure",        "weight": 0.090 },
-        { "theme": "Social Media & Digital Ads", "weight": 0.060 },
-        { "theme": "E-commerce / Internet Retail", "weight": 0.050 },
-        { "theme": "Banks (legacy)",           "weight": 0.140 },
-        { "theme": "Big Oil & Fossil Fuels",   "weight": 0.060 },
-        { "theme": "Electric Vehicles & Mobility", "weight": 0.025 },
-        { "theme": "Consumer Tech Hardware",   "weight": 0.040 },
-        { "theme": "REITs / Real Estate",      "weight": 0.020 },
-        { "theme": "Biotech & Drug Discovery", "weight": 0.020 },
-        { "theme": "Renewable / Clean Energy", "weight": 0.015 }
+        {
+          "theme": "AI Infrastructure",
+          "weight": 0.09
+        },
+        {
+          "theme": "Social Media & Digital Ads",
+          "weight": 0.06
+        },
+        {
+          "theme": "E-commerce / Internet Retail",
+          "weight": 0.05
+        },
+        {
+          "theme": "Banks (legacy)",
+          "weight": 0.14
+        },
+        {
+          "theme": "Big Oil & Fossil Fuels",
+          "weight": 0.06
+        },
+        {
+          "theme": "Electric Vehicles & Mobility",
+          "weight": 0.025
+        },
+        {
+          "theme": "Consumer Tech Hardware",
+          "weight": 0.04
+        },
+        {
+          "theme": "REITs / Real Estate",
+          "weight": 0.02
+        },
+        {
+          "theme": "Biotech & Drug Discovery",
+          "weight": 0.02
+        },
+        {
+          "theme": "Renewable / Clean Energy",
+          "weight": 0.015
+        }
       ]
     },
     {
@@ -500,7 +1530,7 @@
       "sleeve": "core",
       "type": "ETF",
       "eur": 2130,
-      "weight": 0.10,
+      "weight": 0.0611,
       "thesis": "Pure US large-cap exposure on the S&P 500. Concentrated US bet on top of the VWCE/SWDA core — pushes US weighting higher.",
       "risk": [
         "Distributing — quarterly dividends taxed yearly in DE (vs ACC deferral). SXR8 (A0YEDG) is the ACC twin",
@@ -517,64 +1547,245 @@
       },
       "topHoldingsAsOf": "2026-06 (approx, S&P 500)",
       "topHoldings": [
-        { "ticker": "NVDA",  "name": "NVIDIA",       "weight": 0.075 },
-        { "ticker": "AAPL",  "name": "Apple",        "weight": 0.060 },
-        { "ticker": "MSFT",  "name": "Microsoft",    "weight": 0.060 },
-        { "ticker": "AMZN",  "name": "Amazon",       "weight": 0.045 },
-        { "ticker": "GOOGL", "name": "Alphabet A",   "weight": 0.030 },
-        { "ticker": "META",  "name": "Meta",         "weight": 0.028 },
-        { "ticker": "AVGO",  "name": "Broadcom",     "weight": 0.022 },
-        { "ticker": "TSLA",  "name": "Tesla",        "weight": 0.020 },
-        { "ticker": "BRK.B", "name": "Berkshire B",  "weight": 0.018 },
-        { "ticker": "JPM",   "name": "JPMorgan",     "weight": 0.017 }
+        {
+          "ticker": "NVDA",
+          "name": "NVIDIA",
+          "weight": 0.075
+        },
+        {
+          "ticker": "AAPL",
+          "name": "Apple",
+          "weight": 0.06
+        },
+        {
+          "ticker": "MSFT",
+          "name": "Microsoft",
+          "weight": 0.06
+        },
+        {
+          "ticker": "AMZN",
+          "name": "Amazon",
+          "weight": 0.045
+        },
+        {
+          "ticker": "GOOGL",
+          "name": "Alphabet A",
+          "weight": 0.03
+        },
+        {
+          "ticker": "META",
+          "name": "Meta",
+          "weight": 0.028
+        },
+        {
+          "ticker": "AVGO",
+          "name": "Broadcom",
+          "weight": 0.022
+        },
+        {
+          "ticker": "TSLA",
+          "name": "Tesla",
+          "weight": 0.02
+        },
+        {
+          "ticker": "BRK.B",
+          "name": "Berkshire B",
+          "weight": 0.018
+        },
+        {
+          "ticker": "JPM",
+          "name": "JPMorgan",
+          "weight": 0.017
+        }
       ],
       "countryWeightsAsOf": "2026-06 (S&P 500 is US-only)",
       "countryWeights": [
-        { "code": "US", "name": "United States", "weight": 1.000 }
+        {
+          "code": "US",
+          "name": "United States",
+          "weight": 1.0
+        }
       ],
       "industryWeightsAsOf": "2026-06 (approx, S&P 500 GICS)",
       "industryWeights": [
-        { "industry": "Systems Software",                     "sector": "Information Technology",     "weight": 0.080 },
-        { "industry": "Semiconductors",                       "sector": "Information Technology",     "weight": 0.080 },
-        { "industry": "Tech Hardware, Storage & Peripherals", "sector": "Information Technology",     "weight": 0.070 },
-        { "industry": "Application Software",                 "sector": "Information Technology",     "weight": 0.030 },
-        { "industry": "IT Services",                          "sector": "Information Technology",     "weight": 0.025 },
-        { "industry": "Interactive Media & Services",         "sector": "Communication Services",     "weight": 0.055 },
-        { "industry": "Internet & Direct Marketing Retail",   "sector": "Consumer Discretionary",     "weight": 0.045 },
-        { "industry": "Diversified Banks",                    "sector": "Financials",                 "weight": 0.055 },
-        { "industry": "Multi-Sector Holdings",                "sector": "Financials",                 "weight": 0.020 },
-        { "industry": "Property & Casualty Insurance",        "sector": "Financials",                 "weight": 0.020 },
-        { "industry": "Pharmaceuticals",                      "sector": "Health Care",                "weight": 0.045 },
-        { "industry": "Health Care Equipment",                "sector": "Health Care",                "weight": 0.030 },
-        { "industry": "Managed Health Care",                  "sector": "Health Care",                "weight": 0.020 },
-        { "industry": "Biotechnology",                        "sector": "Health Care",                "weight": 0.018 },
-        { "industry": "Automobile Manufacturers",             "sector": "Consumer Discretionary",     "weight": 0.020 },
-        { "industry": "Beverages",                            "sector": "Consumer Staples",           "weight": 0.025 },
-        { "industry": "Household Products",                   "sector": "Consumer Staples",           "weight": 0.018 },
-        { "industry": "Aerospace & Defense",                  "sector": "Industrials",                "weight": 0.025 },
-        { "industry": "Industrial Machinery",                 "sector": "Industrials",                "weight": 0.020 },
-        { "industry": "Integrated Oil & Gas",                 "sector": "Energy",                     "weight": 0.025 },
-        { "industry": "Electric Utilities",                   "sector": "Utilities",                  "weight": 0.025 },
-        { "industry": "Specialized REITs",                    "sector": "Real Estate",                "weight": 0.020 },
-        { "industry": "Specialty Chemicals",                  "sector": "Materials",                  "weight": 0.018 }
+        {
+          "industry": "Systems Software",
+          "sector": "Information Technology",
+          "weight": 0.08
+        },
+        {
+          "industry": "Semiconductors",
+          "sector": "Information Technology",
+          "weight": 0.08
+        },
+        {
+          "industry": "Tech Hardware, Storage & Peripherals",
+          "sector": "Information Technology",
+          "weight": 0.07
+        },
+        {
+          "industry": "Application Software",
+          "sector": "Information Technology",
+          "weight": 0.03
+        },
+        {
+          "industry": "IT Services",
+          "sector": "Information Technology",
+          "weight": 0.025
+        },
+        {
+          "industry": "Interactive Media & Services",
+          "sector": "Communication Services",
+          "weight": 0.055
+        },
+        {
+          "industry": "Internet & Direct Marketing Retail",
+          "sector": "Consumer Discretionary",
+          "weight": 0.045
+        },
+        {
+          "industry": "Diversified Banks",
+          "sector": "Financials",
+          "weight": 0.055
+        },
+        {
+          "industry": "Multi-Sector Holdings",
+          "sector": "Financials",
+          "weight": 0.02
+        },
+        {
+          "industry": "Property & Casualty Insurance",
+          "sector": "Financials",
+          "weight": 0.02
+        },
+        {
+          "industry": "Pharmaceuticals",
+          "sector": "Health Care",
+          "weight": 0.045
+        },
+        {
+          "industry": "Health Care Equipment",
+          "sector": "Health Care",
+          "weight": 0.03
+        },
+        {
+          "industry": "Managed Health Care",
+          "sector": "Health Care",
+          "weight": 0.02
+        },
+        {
+          "industry": "Biotechnology",
+          "sector": "Health Care",
+          "weight": 0.018
+        },
+        {
+          "industry": "Automobile Manufacturers",
+          "sector": "Consumer Discretionary",
+          "weight": 0.02
+        },
+        {
+          "industry": "Beverages",
+          "sector": "Consumer Staples",
+          "weight": 0.025
+        },
+        {
+          "industry": "Household Products",
+          "sector": "Consumer Staples",
+          "weight": 0.018
+        },
+        {
+          "industry": "Aerospace & Defense",
+          "sector": "Industrials",
+          "weight": 0.025
+        },
+        {
+          "industry": "Industrial Machinery",
+          "sector": "Industrials",
+          "weight": 0.02
+        },
+        {
+          "industry": "Integrated Oil & Gas",
+          "sector": "Energy",
+          "weight": 0.025
+        },
+        {
+          "industry": "Electric Utilities",
+          "sector": "Utilities",
+          "weight": 0.025
+        },
+        {
+          "industry": "Specialized REITs",
+          "sector": "Real Estate",
+          "weight": 0.02
+        },
+        {
+          "industry": "Specialty Chemicals",
+          "sector": "Materials",
+          "weight": 0.018
+        }
       ],
       "themeWeightsAsOf": "2026-06 (estimated, S&P 500 large-cap)",
       "themeWeights": [
-        { "theme": "AI Infrastructure",        "weight": 0.110 },
-        { "theme": "AI Supporting (semi eq, networking, memory)", "weight": 0.045 },
-        { "theme": "Cloud Hyperscalers",       "weight": 0.120 },
-        { "theme": "SaaS / Application Software", "weight": 0.040 },
-        { "theme": "Cybersecurity",            "weight": 0.015 },
-        { "theme": "E-commerce / Internet Retail", "weight": 0.055 },
-        { "theme": "Social Media & Digital Ads", "weight": 0.060 },
-        { "theme": "Consumer Tech Hardware",   "weight": 0.065 },
-        { "theme": "Electric Vehicles & Mobility", "weight": 0.025 },
-        { "theme": "Biotech & Drug Discovery", "weight": 0.060 },
-        { "theme": "GLP-1 / Obesity Drugs",    "weight": 0.025 },
-        { "theme": "Defense & Aerospace",      "weight": 0.025 },
-        { "theme": "Banks (legacy)",           "weight": 0.055 },
-        { "theme": "Big Oil & Fossil Fuels",   "weight": 0.030 },
-        { "theme": "REITs / Real Estate",      "weight": 0.020 }
+        {
+          "theme": "AI Infrastructure",
+          "weight": 0.11
+        },
+        {
+          "theme": "AI Supporting (semi eq, networking, memory)",
+          "weight": 0.045
+        },
+        {
+          "theme": "Cloud Hyperscalers",
+          "weight": 0.12
+        },
+        {
+          "theme": "SaaS / Application Software",
+          "weight": 0.04
+        },
+        {
+          "theme": "Cybersecurity",
+          "weight": 0.015
+        },
+        {
+          "theme": "E-commerce / Internet Retail",
+          "weight": 0.055
+        },
+        {
+          "theme": "Social Media & Digital Ads",
+          "weight": 0.06
+        },
+        {
+          "theme": "Consumer Tech Hardware",
+          "weight": 0.065
+        },
+        {
+          "theme": "Electric Vehicles & Mobility",
+          "weight": 0.025
+        },
+        {
+          "theme": "Biotech & Drug Discovery",
+          "weight": 0.06
+        },
+        {
+          "theme": "GLP-1 / Obesity Drugs",
+          "weight": 0.025
+        },
+        {
+          "theme": "Defense & Aerospace",
+          "weight": 0.025
+        },
+        {
+          "theme": "Banks (legacy)",
+          "weight": 0.055
+        },
+        {
+          "theme": "Big Oil & Fossil Fuels",
+          "weight": 0.03
+        },
+        {
+          "theme": "REITs / Real Estate",
+          "weight": 0.02
+        }
       ]
     },
     {
@@ -588,7 +1799,7 @@
       "sleeve": "stocks",
       "type": "Stock",
       "eur": 210,
-      "weight": 0.0099,
+      "weight": 0.006,
       "thesis": "German defense gearbox & drivetrain maker — prime NATO rearmament play. Tank transmissions, naval propulsion, civil industrial. High order backlog tailwind through the rearmament cycle.",
       "risk": [
         "Single-name volatility 40-60% drawdowns possible; defense names trade on news flow",
@@ -605,19 +1816,34 @@
       },
       "topHoldingsAsOf": "2026-06 (self)",
       "topHoldings": [
-        { "ticker": "R3NK", "name": "RENK Group AG", "weight": 1.0 }
+        {
+          "ticker": "R3NK",
+          "name": "RENK Group AG",
+          "weight": 1.0
+        }
       ],
       "countryWeightsAsOf": "2026-06 (HQ)",
       "countryWeights": [
-        { "code": "DE", "name": "Germany", "weight": 1.0 }
+        {
+          "code": "DE",
+          "name": "Germany",
+          "weight": 1.0
+        }
       ],
       "industryWeightsAsOf": "2026-06 (GICS)",
       "industryWeights": [
-        { "industry": "Aerospace & Defense", "sector": "Industrials", "weight": 1.0 }
+        {
+          "industry": "Aerospace & Defense",
+          "sector": "Industrials",
+          "weight": 1.0
+        }
       ],
       "themeWeightsAsOf": "2026-06 (single-stock tag)",
       "themeWeights": [
-        { "theme": "Defense & Aerospace", "weight": 1.0 }
+        {
+          "theme": "Defense & Aerospace",
+          "weight": 1.0
+        }
       ]
     },
     {
@@ -631,7 +1857,7 @@
       "sleeve": "stocks",
       "type": "Stock",
       "eur": 210,
-      "weight": 0.0099,
+      "weight": 0.006,
       "thesis": "Global leader in diabetes + GLP-1 obesity care (Ozempic/Wegovy). Wide moat, strong R&D pipeline, structurally growing TAM as obesity prevalence rises.",
       "risk": [
         "GLP-1 competition intensifies (Lilly tirzepatide, oral GLP-1s, biosimilars post-2030)",
@@ -648,20 +1874,38 @@
       },
       "topHoldingsAsOf": "2026-06 (self)",
       "topHoldings": [
-        { "ticker": "NOVOB", "name": "Novo Nordisk A/S", "weight": 1.0 }
+        {
+          "ticker": "NOVOB",
+          "name": "Novo Nordisk A/S",
+          "weight": 1.0
+        }
       ],
       "countryWeightsAsOf": "2026-06 (HQ)",
       "countryWeights": [
-        { "code": "DK", "name": "Denmark", "weight": 1.0 }
+        {
+          "code": "DK",
+          "name": "Denmark",
+          "weight": 1.0
+        }
       ],
       "industryWeightsAsOf": "2026-06 (GICS)",
       "industryWeights": [
-        { "industry": "Pharmaceuticals", "sector": "Health Care", "weight": 1.0 }
+        {
+          "industry": "Pharmaceuticals",
+          "sector": "Health Care",
+          "weight": 1.0
+        }
       ],
       "themeWeightsAsOf": "2026-06 (single-stock tag)",
       "themeWeights": [
-        { "theme": "GLP-1 / Obesity Drugs", "weight": 0.8 },
-        { "theme": "Biotech & Drug Discovery", "weight": 0.2 }
+        {
+          "theme": "GLP-1 / Obesity Drugs",
+          "weight": 0.8
+        },
+        {
+          "theme": "Biotech & Drug Discovery",
+          "weight": 0.2
+        }
       ]
     },
     {
@@ -675,7 +1919,7 @@
       "sleeve": "stocks",
       "type": "Stock",
       "eur": 210,
-      "weight": 0.0099,
+      "weight": 0.006,
       "thesis": "One of the largest primary silver producers globally — silver + gold mining across the Americas. Inflation/USD-debasement hedge with operating leverage to metal price.",
       "risk": [
         "Highly cyclical: 50-70% drawdowns in metal downturns; juniors get crushed",
@@ -692,20 +1936,39 @@
       },
       "topHoldingsAsOf": "2026-06 (self)",
       "topHoldings": [
-        { "ticker": "PAAS", "name": "Pan American Silver Corp.", "weight": 1.0 }
+        {
+          "ticker": "PAAS",
+          "name": "Pan American Silver Corp.",
+          "weight": 1.0
+        }
       ],
       "countryWeightsAsOf": "2026-06 (HQ; mines across MX/PE/AR/BO/CA/US)",
       "countryWeights": [
-        { "code": "CA", "name": "Canada", "weight": 1.0 }
+        {
+          "code": "CA",
+          "name": "Canada",
+          "weight": 1.0
+        }
       ],
       "industryWeightsAsOf": "2026-06 (GICS)",
       "industryWeights": [
-        { "industry": "Silver", "sector": "Materials", "weight": 0.7 },
-        { "industry": "Gold", "sector": "Materials", "weight": 0.3 }
+        {
+          "industry": "Silver",
+          "sector": "Materials",
+          "weight": 0.7
+        },
+        {
+          "industry": "Gold",
+          "sector": "Materials",
+          "weight": 0.3
+        }
       ],
       "themeWeightsAsOf": "2026-06 (single-stock tag)",
       "themeWeights": [
-        { "theme": "Precious Metals / Gold & Silver", "weight": 1.0 }
+        {
+          "theme": "Precious Metals / Gold & Silver",
+          "weight": 1.0
+        }
       ]
     },
     {
@@ -734,38 +1997,61 @@
       "links": {
         "justETF": "https://www.justetf.com/en/etf-profile.html?isin=IE00BGV5VN51"
       },
-      "sparplan": { "monthlyEur": 50, "startedAt": "2026-06-20" }
+      "sparplan": {
+        "monthlyEur": 50,
+        "startedAt": "2026-06-20"
+      }
     },
     {
       "id": "CASH",
-      "name": "Cash (Sparplan reserve)",
-      "shortName": "Cash",
+      "name": "High-Yield Savings (Tagesgeld)",
+      "shortName": "High-Yield Savings",
       "wkn": "—",
       "isin": "—",
       "yahoo": "EUR",
       "ter": 0.0,
       "sleeve": "cash",
-      "type": "Cash",
-      "eur": 435,
-      "weight": 0.0203,
-      "thesis": "EUR cash buffer freed from VWCE trim. Funds upcoming Sparplan tranches into A2N6LC and acts as dry powder for opportunistic buys.",
+      "type": "HYSA",
+      "eur": 14000,
+      "weight": 0.4016,
+      "thesis": "EUR Tagesgeld / high-yield savings — €14k yielding ~3-3.5% p.a. Emergency fund + Sparplan reserve + opportunistic dry powder.",
       "risk": [
-        "Negative real return at 2-3% inflation — cash drag if held too long",
-        "No yield unless parked in money-market sleeve / Tagesgeld"
+        "Negative real return if HYSA rate < inflation — currently ~breakeven at 3% yield vs 2-3% inflation",
+        "Bank rate cuts: ECB easing cycle drops Tagesgeld rate fast; lock-in via Festgeld if rate persistence matters",
+        "Bank-deposit insurance €100k per bank — verify limits if scaling further"
       ],
       "upside": [
-        "Optionality: dry powder for drawdown buys or new sleeve adds",
-        "Funds ~9 months of A2N6LC Sparplan at current €50/mo cadence"
+        "~€420/yr interest at 3% yield — covers ~8 months of €50/mo A2N6LC Sparplan",
+        "Dry powder for drawdown buys (20-30% market correction = ideal deployment trigger)",
+        "Smooth glidepath: gradual Sparplan ramp from cash → equities reduces sequence risk"
       ],
       "links": {}
     }
   ],
   "sleeves": {
-    "core":     { "label": "Broad-world CORE", "color": "#60a5fa" },
-    "tech":     { "label": "Tech tilt",        "color": "#a78bfa" },
-    "em":       { "label": "EM tilt",          "color": "#fb923c" },
-    "dividend": { "label": "Dividend tilt",    "color": "#34d399" },
-    "stocks":   { "label": "Single stocks",    "color": "#f472b6" },
-    "cash":     { "label": "Cash",             "color": "#9ca3af" }
+    "core": {
+      "label": "Broad-world CORE",
+      "color": "#60a5fa"
+    },
+    "tech": {
+      "label": "Tech tilt",
+      "color": "#a78bfa"
+    },
+    "em": {
+      "label": "EM tilt",
+      "color": "#fb923c"
+    },
+    "dividend": {
+      "label": "Dividend tilt",
+      "color": "#34d399"
+    },
+    "stocks": {
+      "label": "Single stocks",
+      "color": "#f472b6"
+    },
+    "cash": {
+      "label": "High-Yield Savings",
+      "color": "#9ca3af"
+    }
   }
 }
